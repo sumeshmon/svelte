@@ -1,30 +1,37 @@
 <script lang="ts">
-    import Header from "../components/Header.svelte";
-    import Hello from "../components/Hello/Hello.svelte";
-  let content = 'white'
-  let name = "> Not clicked";
+    import Hello from "../../components/Hello/Hello.svelte";
 
+  let content = 'enter color here'
+  let name = "> Not clicked"
+  let firstName = 'Sumesh'
+  let lastName = 'K Sundaran'
+  $: fullName = `${firstName} ${lastName}`
+  $: {
+    console.log(firstName);
+    console.log(fullName);
+    
+    
+  }
   function onClick(e:any) {
     name = " > Clicked";
-    // e.stopPropogation
     const ele = e
-    console.log(ele);
-  }
-  const inputPlay = (e) => {
-    content = e.target.value
-  }
+    // console.log(ele);
+  } 
+
 </script>
 
 <svelte:head>
   <title>SvelteKit demo page</title>
 </svelte:head>
 <!-- <Header title={name}/> -->
-<!-- <Hello {name} on:click={onClick} /> -->
 <h2 style="color: {content};">This is input text {content}</h2>
+<br>
+<p>{fullName}</p>
+<br>
 <button  on:click={onClick}> Button {name}</button>
-<!-- <input type="text"  on:input={inputPlay}> -->
- <input type="text" bind:value={content}>
-
+<input type="text" bind:value={firstName}>
+<input type="text" bind:value={lastName}>
+<input type="text" bind:value={content}>
 
 <style>
   .links {
