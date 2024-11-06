@@ -1,6 +1,8 @@
 <script lang="ts">
     import Header from "../components/Header.svelte";
     import Hello from "../components/Hello/Hello.svelte";
+    import Modal from "../components/Modal.svelte";
+  
   let content = 'white'
   let name = "> Not clicked";
 
@@ -10,7 +12,7 @@
     const ele = e
     console.log(ele);
   }
-  const inputPlay = (e) => {
+  const inputPlay = (e: any) => {
     content = e.target.value
   }
 </script>
@@ -18,6 +20,10 @@
 <svelte:head>
   <title>SvelteKit demo page</title>
 </svelte:head>
+<Modal 
+  message = 'I am from page'
+  isLoggedIn = {true}
+/>
 <!-- <Header title={name}/> -->
 <!-- <Hello {name} on:click={onClick} /> -->
 <h2 style="color: {content};">This is input text {content}</h2>

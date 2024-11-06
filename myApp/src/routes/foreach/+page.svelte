@@ -4,7 +4,7 @@
       name: 'Sumesh', age : 44, position: 'Elder Person', id : 1,
     },
     {
-      name: 'Sali', age : 38, position: 'House Wife', id : 2,
+      name: 'Sali', age : 37, position: 'House Wife', id : 2,
     },
     {
       name: 'Theertha', age : 14, position: 'Daughter', id : 3,
@@ -22,8 +22,8 @@
 
   // Inline Event Handlers
 const removeSumesh = (id: number) => {
-  {console.log(id)}
-  family = family.filter( (members) => members.id != id)
+  // {console.log(id)}
+  family = family.filter ( (members) => members.id != id) 
 }
 </script>
 
