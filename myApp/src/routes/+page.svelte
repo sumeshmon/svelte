@@ -20,10 +20,7 @@
 <svelte:head>
   <title>SvelteKit demo page</title>
 </svelte:head>
-<Modal 
-  message = 'I am from page'
-  isLoggedIn = {true}
-/>
+
 <!-- <Header title={name}/> -->
 <!-- <Hello {name} on:click={onClick} /> -->
 <h2 style="color: {content};">This is input text {content}</h2>

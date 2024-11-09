@@ -1,34 +1,26 @@
 <script>
-    export let message = 'Default value'
-    export let isLoggedIn = false
+    // export let message = 'Default value'
     export let afterLoggin = true
-    let showModal = false
-    const showModalFn = () => {
-        isLoggedIn = !isLoggedIn
-    }
+    export let showModal = false
+    
     
 </script>
 
 
-{#if isLoggedIn}
-    <dialog class="modal" class:if-logged-in={afterLoggin} open={showModal}>
+{#if showModal}
+    <dialog class="modal" class:if-logged-in={afterLoggin} on:click|self>
         <div class="modal-inner">
-            <h2>{message}</h2>
+            <!-- <h2>{message}</h2> -->
+            <slot />
+            <slot name="title"></slot>
         </div>
-        
     </dialog>
     
 {/if}
-<button on:click={showModalFn}>Show modal</button>
+
 
 <style>
-    button{
-        padding: 20px;
-        color: #fff;
-        position: relative;
-        z-index: 10;
-        background-color: red;
-    }
+    
     .modal{
         background-color: rgba(0, 0, 0, 0.5);
         position: fixed;
@@ -37,6 +29,8 @@
         width: 100%;
         height: 100%;
         display: flex;
+        top:0;
+        z-index: 10;
     }
     .if-logged-in{
         background-color: cadetblue;

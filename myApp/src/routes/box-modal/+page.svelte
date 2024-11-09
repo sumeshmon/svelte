@@ -1,33 +1,35 @@
 <script lang="ts">
+  import AddPersonForm from "../../components/AddPersonForm.svelte";
   import Modal from "../../components/Modal.svelte";
-  let isLoggedIn = false;
   let showModal = false
 
-  const show = () => {
-    isLoggedIn = !isLoggedIn
-    showModal = true
-  }
+  const toggleModel = () => {
+        showModal = !showModal
+    }
 </script>
 
 <svelte:head>
   <title>SvelteKit demo page</title>
 </svelte:head>
 <!-- <button on:click={show}>Show Modal</button> -->
-<Modal 
-  message='I am from parent page'
-/>
+<button on:click={toggleModel}>Show modal</button>
+<Modal {showModal} on:click={toggleModel}>
+  <AddPersonForm/>
+  <div slot="title">
+    <h4>Title from slot name</h4>
+  </div>
+</Modal>
 
 <style>
+  button{
+        padding: 20px;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+        background-color: red;
+  }
   body{
     background-color: white;
   }
-  button{
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    margin: 0 auto;
-    width: 200px;
-    background-color: #222;
-    color: #fff;
-  }
+  
 </style>

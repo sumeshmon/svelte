@@ -1,57 +1,11 @@
-# Svelte Project Template
+## event
+https://dev.to/tanhauhau/7-event-modifiers-in-svelte-you-must-know-27oc
 
-[Svelte](https://svelte.dev/) project preconfigured with:
 
-- [SvelteKit](https://kit.svelte.dev/) ([Vite](https://vitejs.dev/))
-- [TypeScript](http://typescriptlang.org/)
-- [Sass](https://sass-lang.com/) & [PostCSS Preset Env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) ( which includes [Autoprefixer](https://github.com/postcss/autoprefixer))
-- [Prettier](https://prettier.io/), [Eslint](https://eslint.org/) & [Stylelint](https://stylelint.io/)
-- [Husky](https://typicode.github.io/husky/) & [Lint-staged](https://github.com/okonet/lint-staged)
-- [Vitest](https://vitest.dev/) \*1
-- [Playwright](https://playwright.dev/) \*1
-- [Storybook](https://storybook.js.org/docs/svelte/writing-stories/introduction) \*1
+## event forwarding
+in the component can pass enpty on:click - and in the page on:click{props}
 
-\*1: To keep the installation speedy Vitest, Playwright and Storybook are disabled by default.
+## event modifiers
+self - only fire the event if the clicked element is target
+once - Sometimes you want the event listener to be called only once. You want to remove the event listener as soon as it's being called.
 
-## Initial setup
-
-```sh
-npx tiged "github.com/bfanger/svelte-project-template#main" my-svelte-project
-cd my-svelte-project
-git init --initial-branch main
-git add .
-pnpm install     # or  npm install
-pnpm dev --open  # or  npm run dev -- --open
-```
-
-## Enabling Testing & Storybook
-
-```sh
-node ./enable-testing.js
-pnpm install  # or  npm install
-```
-
-- Creates the configuration files
-- Creates an example unittest
-- Creates an example e2e test
-- Creates an example storybook story
-- node_modules grows from ~200M to ~350M.
-
-## Linting
-
-```sh
-pnpm lint  # or  npm run lint
-```
-
-I'd recommend enabling format-on-save in your editor, but to apply all auto fixes manually:
-
-```sh
-pnpm format  # or  npm run format
-```
-
-## Build
-
-```sh
-pnpm build             # or  npm run build
-npx serve@latest build # or  npm run preview
-```
