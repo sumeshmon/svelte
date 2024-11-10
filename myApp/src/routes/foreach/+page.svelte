@@ -35,7 +35,7 @@ const removeSumesh = (id: number) => {
   {#each family as members (members.id)}
    <div>
     <h3>{members.name}, Age is {members.age} and the person is {members.position}</h3> <br>
-    <button on:click={ () => removeSumesh(members.id) }>{members.id}</button> <br> <br> 
+    <button on:click={ () => removeSumesh(members.id) }>Remove {members.name}</button> <br> <br> 
    </div>
    {:else}
    {console.log('No data')}
@@ -53,5 +53,10 @@ const removeSumesh = (id: number) => {
   }
   input{
     color:#000
+  }
+  button{
+    background-color: gray;
+    color: #fff;
+    padding: 10px
   }
 </style>

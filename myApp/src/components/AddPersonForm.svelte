@@ -1,29 +1,26 @@
 <script lang="ts">
-    let family = [
-    {
-      name: 'Sumesh', age : 44, position: 'Elder Person', id : 1,
-    },
-    {
-      name: 'Sali', age : 37, position: 'House Wife', id : 2,
-    },
-    {
-      name: 'Theertha', age : 14, position: 'Daughter', id : 3,
-    },
-    {
-      name: 'Tejas', age : 11, position: 'Son', id : 4,
-    }
-  ]
+  import type { svelte } from "@sveltejs/vite-plugin-svelte";
+  import { createEventDispatcher } from 'svelte';
+  const dispatch = createEventDispatcher();
   let name: string = "";
   let age: number; 
   let movie: string;
-  let food: string[] = []
+  let position: string;
+  let food: string[] = [];
 
   const formSubmit = () => {
-    console.log(name,age,food, movie);
+    const person = {
+      name,
+      age,
+      food,
+      position,
+      id: Math.floor(Math.random() * 10 + 100)
+    };
+    dispatch('addPerson', person)
   }
 
 </script>
-{#if name !== '' ||  typeof age === 'number' ||  movie !== '' ||  food.length > 0}
+{#if name !== '' && typeof age === 'number' && movie !== '' && food.length > 0}
     <div>{name} - {age} - {food} - {movie}</div>
     {:else}
     <p>Please fill the form</p>
@@ -31,6 +28,7 @@
 <form on:submit|preventDefault={formSubmit}>
     <input type="text" placeholder="Name" bind:value={name}>
     <input type="number" placeholder="Age" bind:value={age}>
+    <input type="text" placeholder="Position" bind:value={position}>
     <br><br>
     <input type="checkbox" value="veg" bind:group={food}> Veg <br>
     <input type="checkbox" value="nonVeg" bind:group={food}> Non Veg
