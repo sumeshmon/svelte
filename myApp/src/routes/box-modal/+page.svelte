@@ -57,7 +57,7 @@
         padding: 6px 20px;
         color: #fff;
         position: relative;
-        z-index: 1;
+        z-index: 10;
         background-color: #4c2aaa;
   }
   body{
