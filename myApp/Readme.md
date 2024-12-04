@@ -16,5 +16,5 @@ self - only fire the event if the clicked element is target
 once - Sometimes you want the event listener to be called only once. You want to remove the event listener as soon as it's being called.
 
 ## slots
-<slot /> - From child we can add contnets. If we use <slot name="title"></slot> then the child should be <div slot="title">content</div>. The important things is the slot order will be followed by order which is from parent. 
+`<slot /> `- From child we can add contnets. If we use `<slot name="title"></slot>` then the child should be `<div slot="title">content</div>`. The important things is the slot order will be followed by order which is from parent. 
 
