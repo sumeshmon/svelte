@@ -26,7 +26,7 @@
 <!-- <Header title={name}/> -->
 <h2 style="color: {content};">This is input text {content}</h2>
 <br>
-<p>{fullName}</p>
+<p>The Full name is :> {fullName}</p>
 <br>
 <button  on:click={onClick}> Button {name}</button>
 <input type="text" bind:value={firstName}>

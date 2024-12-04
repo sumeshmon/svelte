@@ -14,17 +14,18 @@
     const removeOldCar = (year:string,e:Event) => {
         cars = cars.filter( (ele) => ele.year != year)
         console.log(e);
-        
-            
-    }
+    } 
+    let conditional = true
 </script>
 
 {#each cars as cars}
-    <div class="name">{cars.name} {cars.model} {cars.year}</div>  
+    <div class="name" class:conditional={conditional}>{cars.name} {cars.model} {cars.year}</div>  
     <br>  
     <button on:click={ (e) => removeOldCar(cars.year,e)}>Remove</button> 
     <br>  <br>   
     <hr>
+    {:else}
+    <p>No record found !</p>
 {/each}
 <style>
     button{
