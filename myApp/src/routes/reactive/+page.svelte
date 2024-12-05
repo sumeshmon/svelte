@@ -28,10 +28,10 @@
 <br>
 <p>The Full name is :> {fullName}</p>
 <br>
-<button  on:click={onClick}> Button {name}</button>
-<input type="text" bind:value={firstName}>
-<input type="text" bind:value={lastName}>
-<input type="text" bind:value={content}>
+  <button  on:click={onClick}> Button {name}</button>
+  <input type="text" bind:value={firstName}>
+  <input type="text" bind:value={lastName}>
+  <input type="text" bind:value={content}>
 
 <style>
   .links {

@@ -18,3 +18,15 @@ once - Sometimes you want the event listener to be called only once. You want to
 ## slots
 `<slot /> `- From child we can add contnets. If we use `<slot name="title"></slot>` then the child should be `<div slot="title">content</div>`. The important things is the slot order will be followed by order which is from parent. 
 
+## truthy
+to check if name is truthy. <br>
+`{#if name}
+    <h2>{name}</h2>
+{/if}`
+
+## forms
+in JS if the input value is number it will convert in to string, while in svelte it will remain number.<br>
+Example: <br>
+`<input type="text" placeholder="Name" bind:value={name}>  <br>
+<form on:submit|preventDefault={formSubmit}>`
+

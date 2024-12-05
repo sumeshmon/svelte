@@ -20,11 +20,7 @@
   }
 
 </script>
-{#if name !== '' && typeof age === 'number' && movie !== '' && food.length > 0}
-    <div>{name} - {age} - {food} - {movie}</div>
-    {:else}
-    <p>Please fill the form</p>
-{/if}
+<div>{name} - {age} {position}- {food} - {movie}</div>
 <form on:submit|preventDefault={formSubmit}>
     <input type="text" placeholder="Name" bind:value={name}>
     <input type="number" placeholder="Age" bind:value={age}>
