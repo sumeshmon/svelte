@@ -27,6 +27,6 @@ to check if name is truthy. <br>
 ## forms
 in JS if the input value is number it will convert in to string, while in svelte it will remain number.<br>
 Example: <br>
-`<input type="text" placeholder="Name" bind:value={name}>  <br>
-<form on:submit|preventDefault={formSubmit}>`
+`<input type="text" placeholder="Name" bind:value={name}>`  <br>
+`<form on:submit|preventDefault={formSubmit}>`
 
