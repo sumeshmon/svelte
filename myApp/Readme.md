@@ -35,9 +35,7 @@ Example: <br>
  <br><br>
  To avoid this we can use <b>grouping</b>. This help to get all the values in an Array.
  <br>
-`<input type="checkbox" value="sali" bind:group={family}>`  <br>
-`<input type="checkbox" value="sumesh" bind:group={family}>`
-
+like value="sali" bind:group={family}
 Then we can use let family:string[] = []
 <br>
 <h5>Select box</h3>
