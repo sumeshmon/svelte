@@ -10,6 +10,7 @@
     let hideModal = () => {
         showModal = !showModal
     }
+ 
 </script>
 <Modal {showModal} on:click={hideModal}>
     <div slot="title">I am from named title</div>
