@@ -29,14 +29,14 @@ in JS if the input value is number it will convert in to string, while in svelte
 Example: <br>
 `<input type="text" placeholder="Name" bind:value={name}>`  <br>
 `<form on:submit|preventDefault={formSubmit}>`
-<br><br>
+
 <h5>Checkbox</h5>
  The checkbox "checked "value is default false. bind:checked={varibale_name} and assign like let varibale_name = false. After the checkbox is checked the value will be true. Using this we need to create many variables and the respond will be boolean.  
  <br><br>
  To avoid this we can use <b>grouping</b>. This help to get all the values in an Array.
  <br>
-`<input type="checkbox" value="sumesh" bind:group={family}`  <br>
-`<input type="checkbox" value="Sali" bind:group={family}`
+`<input type="checkbox" value="sali" bind:group={family}>`  <br>
+`<input type="checkbox" value="sumesh" bind:group={family}>`
 
 Then we can use let family:string[] = []
 <br>
