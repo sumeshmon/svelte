@@ -30,13 +30,16 @@ Example: <br>
 `<input type="text" placeholder="Name" bind:value={name}>`  <br>
 `<form on:submit|preventDefault={formSubmit}>`
 <br><br>
- The checkbox "checked "value is default false. bind:checked={varibale_name} and assign like let varibale_name = false. After the checkbox is checked the value will be true. Using this we need to create many variables. 
+<h3>Checkbox</h3>
+ The checkbox "checked "value is default false. bind:checked={varibale_name} and assign like let varibale_name = false. After the checkbox is checked the value will be true. Using this we need to create many variables and the respond will be boolean.  
  <br><br>
- To avoid this we can use grouping.
+ To avoid this we can use <b>grouping</b>. This help to get all the values in an Array.
  <br>
 `<input type="checkbox" value="sumesh" bind:group={family}`  <br>
 `<input type="checkbox" value="Sali" bind:group={family}`
 
-
 Then we can use let family:string[] = []
-
+<br>
+<h3>Select box</h3>
+For select box use <strong>bind:value={var name}</strong>, the options use different values.
+<br>

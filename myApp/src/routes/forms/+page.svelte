@@ -4,6 +4,12 @@
     let sali = false
 
     let family :string[] = []
+    let cars : string [] = []
+
+    let handleValues = () => {
+        console.log(name,family,sumesh, cars);
+        
+    }
 </script>
 
 {#if name}
@@ -12,7 +18,7 @@
 <div>
     {sumesh} {sali}
 </div>
-<form action="" class="form">
+<form action="" class="form" on:submit={handleValues}>
     <input type="text" placeholder="{name}" bind:value={name}>
     <br><br>
 
@@ -43,9 +49,25 @@
     <label for="family"> <br>
         <input type="checkbox" value="tejas" bind:group={family}>
     </label> Tejas
+<br><br>
+    <select name="cars" id="" bind:value={cars}>
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="maruthi">Maruthi</option>
+        <option value="honda">Honda</option>
+        
+        
+        
+    </select>
+    <button>Add value</button>
 </form>
 <style>
     form{
         margin: 20px;
+    }
+    button{
+        background-color: #222;
+        padding: 10px 20px;
+        color: #fff;
     }
 </style>
