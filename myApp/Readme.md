@@ -30,7 +30,7 @@ Example: <br>
 `<input type="text" placeholder="Name" bind:value={name}>`  <br>
 `<form on:submit|preventDefault={formSubmit}>`
 <br><br>
-<h3>Checkbox</h3>
+<h5>Checkbox</h5>
  The checkbox "checked "value is default false. bind:checked={varibale_name} and assign like let varibale_name = false. After the checkbox is checked the value will be true. Using this we need to create many variables and the respond will be boolean.  
  <br><br>
  To avoid this we can use <b>grouping</b>. This help to get all the values in an Array.
@@ -40,6 +40,6 @@ Example: <br>
 
 Then we can use let family:string[] = []
 <br>
-<h3>Select box</h3>
+<h5>Select box</h3>
 For select box use <strong>bind:value={var name}</strong>, the options use different values.
 <br>
