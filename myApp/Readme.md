@@ -1,3 +1,5 @@
+## start a project
+degit repoName/ template projectName
 ## event
 https://dev.to/tanhauhau/7-event-modifiers-in-svelte-you-must-know-27oc
 
@@ -35,9 +37,10 @@ Example: <br>
  <br><br>
  To avoid this we can use <b>grouping</b>. This help to get all the values in an Array.
  <br>
-like value="sali" bind:group={family}
+like value="sali" bind:group={family}, like value="sumesh" bind:group={family} etc<br>
 Then we can use let family:string[] = []
 <br>
 <h5>Select box</h3>
 For select box use <strong>bind:value={var name}</strong>, the options use different values.
 <br>
+Event forwarding can forward a event only, not any data. For this form data we need to use createEventDispatcher from svelte kit. 
