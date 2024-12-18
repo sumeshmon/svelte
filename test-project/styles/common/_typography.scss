@@ -1,0 +1,102 @@
+// Reset styles
+html,
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+// Typography styles
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-primary;
+    font-weight: $heading-font-weight;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    transition: all 500ms ease;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul,
+ol {
+    list-style: none;
+}
+li {
+    margin-bottom: 15px;
+}
+blockquote {
+    margin: 0;
+    padding: 0 1em;
+    border-left: 2px solid $grey-light;
+}
+
+pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+code {
+    font-family: monospace;
+}
+img {
+    max-width: 100%;
+}
+iframe {
+    width: 100%;
+}
+strong {
+    font-weight: 900;
+}
+input {
+    &:focus {
+        outline: 0;
+    }
+}
+section {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+th {
+    font-weight: 500;
+}
+video {
+    border: 1px solid $border-color;
+}
+hr {
+    border-top: 1px solid $black;
+    opacity: 1;
+    margin-bottom: 40px;
+}
+button {
+    background: none;
+}

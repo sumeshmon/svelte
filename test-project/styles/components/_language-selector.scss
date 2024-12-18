@@ -1,0 +1,36 @@
+.language-selector {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    &__item {
+        margin-left: 5px;
+        margin-bottom: 0;
+        &:before {
+            content: '|';
+            font-size: 16px;
+            float: left;
+            margin-right: 5px;
+            line-height: 21px;
+            color: $text-color;
+            font-weight: 400;
+        }
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+        &--hide {
+            display: none;
+        }
+    }
+    &__link {
+        color: $text-color;
+        font-weight: 400;
+        &:hover {
+            text-decoration: none;
+        }
+        &.active {
+            color: $primary;
+        }
+    }
+}

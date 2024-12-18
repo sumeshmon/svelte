@@ -1,0 +1,21 @@
+{
+    "/de/dokumente": "/de/documents",
+
+    "/de/kontakt": "/de/contact",
+    "/de/kontakt/alarm": "/de/contact/alert",
+    "/de/kontakt/email": "/de/contact/email",
+    "/de/kontakt/event_erinnerung": "/en/contact/event_reminder",
+
+    "/de/events": "/de/events",
+    "/de/events/kasten": "/de/events/box",
+    "/de/events/filter": "/de/events/filter",
+
+    "/de/aktionaere-innen": "/de/shareholder",
+
+    "/de/suche": "/de/search",
+    "/de/nachrichten/[slug]/[id]": "/de/news/[slug]/[id]",
+    "/de/nachrichten": "/de/news",
+
+    "/de/personenprofil/[slug]/[id]": "/de/people-profile/[slug]/[id]",
+    "/de/personenprofil": "/de/people-profile"
+}

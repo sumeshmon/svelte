@@ -1,0 +1,19 @@
+{
+    "date": "Date",
+    "title": "Title",
+    "type": "Type",
+    "location": "Location",
+    "years": "Years",
+    "category": "Category",
+    "noItemsFound": "Currently there are no news available for this section.",
+    "dateOfPublication": "Date of Publication",
+    "thresholdDate": "Date on which threshold was crossed / reached",
+    "legalEntity": "Legal entity",
+    "registeredOffice": "City of registered office, country",
+    "totalPositions": "Total both in %  / Total number of voting rights",
+    "datePlaceholderTill": "Till ...",
+    "datePlaceholderFrom": "From ...",
+    "datePlaceholder": "YYYY-MM-DD",
+    "dateFilterFormat": "yyyy-MM-dd",
+    "detailLink": "{{base}}{{lang}}/news/{{slug}}/{{id}}"
+}

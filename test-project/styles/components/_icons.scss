@@ -1,0 +1,110 @@
+.ORIG-icon {
+    &:before {
+        content: '\36';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:hover {
+        color: #000;
+    }
+}
+.HTML-icon {
+    &:before {
+        content: '\39';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:hover {
+        color: #000;
+    }
+}
+.RTF-icon {
+    &:before {
+        content: '\74';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:hover {
+        color: #000;
+    }
+}
+.CONVPDF-icon {
+    &:before {
+        content: '\fc';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:hover {
+        color: #000;
+    }
+}
+.XLS-icon {
+    &:before {
+        content: '\58';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:hover {
+        color: #000;
+    }
+}
+.WEBCAST-icon {
+    &:before {
+        content: '\c4';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    &:hover {
+        color: #000;
+    }
+}
+.CONVTEXT-icon {
+    &:before {
+        content: '\36';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:hover {
+        color: #000;
+    }
+}
+.XBRL-icon {
+    &:before {
+        content: '\36';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:hover {
+        color: #000;
+    }
+}
+
+.REDLINE-icon {
+    &:before {
+        content: '\39';
+        display: inline-block;
+        font-family: $font-family-icon;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &:hover {
+        color: #000;
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "doublePageMode": "Double Page Mode",
+    "downloadPDFFile": "Download PDF File",
+    "gotoFirstPage": "Goto First Page",
+    "gotoLastPage": "Goto Last Page",
+    "loading": "Loading",
+    "mailBody": "Check out this site {{url}}",
+    "mailSubject": "I wanted you to see this FlipBook",
+    "nextPage": "Next Page",
+    "pause": "Pause AutoPlay",
+    "play": "Start AutoPlay",
+    "previousPage": "Previous Page",
+    "share": "Share",
+    "singlePageMode": "Single Page Mode",
+    "toggleFullscreen": "Toggle Fullscreen",
+    "toggleHelp": "Toggle Help",
+    "toggleOutline": "Toggle Outline/Bookmark",
+    "toggleSound": "Turn on/off Sound",
+    "toggleThumbnails": "Toggle Thumbnails",
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out"
+}

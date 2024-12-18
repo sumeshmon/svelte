@@ -1,0 +1,74 @@
+{
+    "title": "Share (de)",
+    "description": "Share (de)",
+    "notFound": "Zu diesem Bereich liegen derzeit keine Daten vor.",
+
+    "companyProfileTitle": "Company Profile (de)",
+
+    "shareholderStructureTitle": "Shareholder structure(de)",
+    "shareholderStructureWithTable": "Shareholder structure with table(de)",
+    "shareholderStructureAsTable": "Shareholder structure as table(de)",
+    "lastUpdated": "Last Updated",
+
+    "__commentStockInfo": "You can rearrange the order of items in the Stock Info table here.",
+    "stockInfoTitle": "Stock Info(de)",
+    "stockType": "Stock Type",
+    "stockExchange": "Stock Exchange",
+    "securityCodeNumber": "Security Code Number",
+    "stockTradingSymbol": "Stock/Trading Symbol",
+    "onlineDate": "Online Date",
+    "isin": "ISIN",
+    "cusip": "CUSIP",
+    "wkn": "WKN",
+    "rating": "Rating",
+    "totalSharesOutstanding": "Total Shares Outstanding",
+    "capitalStock": "Capital Stock",
+    "shareTypeStatedValue": "Share Type/Stated Value",
+    "stockIndex": "Index",
+    "lastDividends": "Last Dividends",
+    "sector": "Sector",
+
+    "__commentCompanyFundamentals": "You can rearrange the order of items in the Company Fundamentals table here.",
+    "companyFundamentalsTitle": "Company Fundamentals (de)",
+    "industry": "Industry",
+    "yearOfFoundation": "Year of Foundation",
+    "sales": "Sales",
+    "staff": "Staff",
+    "subsidiaries": "Subsidiaries",
+    "endOfBusinessYear": "End of Business Year",
+    "ric": "RIC",
+    "bloombergTicker": "Bloomberg Ticker",
+    "paymentAgency": "Payment Agency",
+    "metaData": {
+        "lei": "LEI"
+    },
+
+    "__commentIpoData": "You can rearrange the order of items in the IPO Data table here.",
+    "ipoDataTitle": "IPO Data (de)",
+    "offeringPeriodStart": "Offering Period Start Date",
+    "offeringPeriodEnd": "Offering Period End Date",
+    "bookBuildingRange": "Book Building Range",
+    "subscriptionPrice": "Fixed/Subscription Price",
+    "firstTradingDay": "First Trading Day",
+    "issuingMethod": "Issuing Method",
+    "firstPrice": "First Price",
+    "ipoVolume": "IPO Volume",
+    "greenshoeExecuted": "Greenshoe Executed",
+    "combinedCompanyData": {
+        "__commentCombinedCompanyData": "You can rearrange the order of items in the Combined Company Data table here.",
+        "firstTradingDay": "First Trading Day",
+        "totalSharesOutstanding": "Total Shares Outstanding",
+        "capitalStock": "Capital Stock",
+        "stockType": "Stock Type",
+        "isin": "ISIN",
+        "wkn": "WKN",
+        "metaData": {
+            "lei": "LEI"
+        },
+        "stockTradingSymbol": "Stock/Trading Symbol",
+        "stockExchange": "Stock Exchange",
+        "stockIndex": "Index",
+        "sector": "Sector",
+        "paymentAgency": "Payment Agency"
+    }
+}

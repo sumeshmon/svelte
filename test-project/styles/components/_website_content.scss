@@ -1,0 +1,77 @@
+.website-content_wrapper {
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    &__content {
+        &:hover {
+            opacity: 0.6;
+            background-color: rgba(255, 255, 255);
+            box-shadow: 0 0 0 1px #ebecf0;
+        }
+        &:has(.ckeditor-wrapper):hover {
+            background: none;
+            opacity: 1;
+            box-shadow: none;
+        }
+    }
+    &__badges {
+        text-align: right;
+        & div {
+            display: inline-block;
+            &:hover {
+                background-color: #fff;
+                color: #1f85f9;
+                border: solid 1px #9ba4bf;
+                line-height: normal;
+                border-radius: 4px;
+            }
+        }
+        button {
+            appearance: none;
+            border: none;
+            background-color: transparent;
+            margin: 0;
+            cursor: pointer;
+        }
+        span.wc-badge {
+            margin-left: 2px;
+            margin-top: 2px;
+            max-width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            display: inline-flex;
+            background: #525a75;
+            color: $grey-bright;
+            border-radius: 2px;
+            overflow: hidden;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 400;
+            padding: 0 4px;
+            height: 16px;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+        span.wc-badge-publish {
+            background: #2e993c;
+            color: #fff;
+        }
+        span.wc-badge-draft {
+            background: #c4cbde;
+            color: #3a4155;
+        }
+    }
+    ol {
+        margin-left: 20px;
+        padding: 0;
+        li {
+            list-style-type: decimal;
+        }
+    }
+    ul {
+        margin-left: 20px;
+        padding: 0;
+        li {
+            list-style-type: disc;
+        }
+    }
+}

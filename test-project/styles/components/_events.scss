@@ -1,0 +1,117 @@
+.events {
+    &__image-teaser {
+        background: $grey-bright;
+        padding: 15px 15px 30px;
+        height: 100%;
+        &--img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &__date {
+        display: inline-block;
+        color: #212529;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 10px 0 0;
+    }
+    &__title {
+        font-size: 18px;
+        margin: 5px 0 10px;
+    }
+    &__category-name {
+        margin: 20px 0;
+    }
+    &__search {
+        width: 300px;
+        height: 46px;
+        padding: 0 10px;
+        vertical-align: top;
+        border: solid 1px $border-color;
+    }
+    &__add {
+        border: none;
+        background: none;
+        transition: all 0.5s ease;
+        &:hover {
+            color: $primary;
+        }
+    }
+    &__meta {
+        &-link {
+            display: block;
+        }
+    }
+    .icon-master- {
+        padding-right: 5px;
+        text-decoration: none !important;
+        display: inline-block;
+    }
+    &__icon {
+        &-link {
+            &:before {
+                content: $icon-master-link;
+            }
+        }
+        &-news {
+            &:before {
+                content: $icon-master-link;
+            }
+        }
+        &-webcast {
+            &:before {
+                content: $icon-master-volume;
+            }
+        }
+        &-mp3 {
+            &:before {
+                content: $icon-master-volume;
+            }
+        }
+        &-pdf {
+            &:before {
+                content: $icon-master-file-pdf;
+            }
+        }
+        &-video {
+            &:before {
+                content: $icon-master-play;
+            }
+        }
+        &-html {
+            &:before {
+                content: $icon-master-file-html;
+            }
+        }
+        &-xls {
+            &:before {
+                content: $icon-master-file-xlsx;
+            }
+        }
+        &-zip {
+            &:before {
+                content: $icon-master-download;
+            }
+        }
+        &-img {
+            &:before {
+                content: $icon-master-images;
+            }
+        }
+    }
+    &__past {
+        td {
+            opacity: 0.5;
+        }
+    }
+    &__box {
+        &-link {
+            text-decoration: none !important;
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "404": {
+        "head_title": "Error 404: Not found test",
+        "page_title": "404. Page not found!.",
+        "page_description": "<p>The requested URL was not found on this server.</p>"
+    },
+    "400": {
+        "head_title": "Error 400: Bad Request",
+        "page_title": "400. Bad Request.",
+        "page_description": "<p>The request cannot be fulfilled due to bad syntax.</p>"
+    },
+    "403": {
+        "head_title": "Error 403: Forbidden",
+        "page_title": "403. Forbidden.",
+        "page_description": "<p>You don't have the permission to access requestd URL</p>"
+    },
+    "500": {
+        "head_title": "Something went wrong",
+        "page_title": "Something went wrong",
+        "page_description": "<p>We seem to be having some technical difficulties. Try reloading the page.</p><p>Report this if the problem persists.</p>"
+    },
+    "default": {
+        "head_title": "Something went wrong",
+        "page_title": "Something went wrong",
+        "page_description": "<p>We seem to be having some technical difficulties. Try reloading the page.</p><p>Report this if the problem persists.</p>"
+    }
+}

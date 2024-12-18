@@ -1,0 +1,26 @@
+.document {
+    &__wrapper {
+    }
+    &__image-teaser {
+        background: $grey-bright;
+        padding: 15px 15px 30px;
+        height: 100%;
+        &--img {
+            width: 100%;
+        }
+    }
+    &__date {
+        display: inline-block;
+        color: #212529;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 10px 0 0;
+    }
+    &__title {
+        font-size: 18px;
+        margin: 5px 0 10px;
+    }
+    &__category-name {
+        margin: 20px 0;
+    }
+}

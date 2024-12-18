@@ -1,0 +1,45 @@
+/** Search form */
+.search-form {
+    @extend .form-inline !optional;
+}
+
+.search-form label {
+    @extend .form-group !optional;
+
+    font-weight: normal;
+}
+
+.search-form .search-field {
+    @extend .form-control !optional;
+}
+
+.search-form .search-submit {
+    @extend .btn;
+    @extend .btn-secondary !optional;
+}
+
+.form-control {
+    height: 44px;
+    font-size: 15px;
+    border-radius: 0;
+}
+
+.radio-group ul li {
+    display: inline-block;
+}
+
+.radio-group label {
+    margin-right: 20px;
+}
+
+input.form-control[type='radio'] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    float: left;
+    appearance: auto;
+    box-shadow: none;
+}
+
+input.form-control[type='radio']:checked {
+}

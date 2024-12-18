@@ -1,0 +1,13 @@
+include:
+    - project: 'investor-relations/ir-products/cms/websites/ir-website-shared-gitlab-build'
+      ref: 'main'
+      file:
+          - '.shared.gitlab-ci.yml'
+
+stages:
+    - Install
+    - Quality
+    - security
+    - Release_Tag
+    - Release_Prod
+    - Release_Stage

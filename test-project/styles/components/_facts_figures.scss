@@ -1,0 +1,31 @@
+.facts-table {
+    &--type1,
+    &--type2 {
+        tbody {
+            tr {
+                &:first-of-type {
+                    border-bottom: 2px solid #35373e !important;
+                    background: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &--type2 {
+        tbody {
+            tr {
+                &:nth-of-type(2) {
+                    border-bottom: 2px solid #35373e !important;
+                    background: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__row-head td {
+        background: #516372;
+        color: #fff;
+        border-bottom: 1px solid #516372;
+        padding: 0.75rem;
+    }
+}

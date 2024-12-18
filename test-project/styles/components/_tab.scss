@@ -1,0 +1,120 @@
+.tab {
+    &__menu {
+        border-bottom: 0;
+        margin-bottom: 20px;
+        &--item {
+            padding: 9px 30px;
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: $primary;
+            background-color: #c4cbde;
+            border-radius: 5px;
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        .tab--active {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+    &__content {
+        &--item {
+            display: none;
+        }
+        .tab--active {
+            display: block;
+            &.tab__menu--item {
+                display: inline-block;
+            }
+        }
+        &--wrapper {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(168, 168, 168, 0.5);
+            video {
+                border: 1px solid #ccc;
+            }
+        }
+        &--date {
+            margin: 5px 0 10px;
+            color: $black;
+            line-height: 20px;
+            font-weight: 700;
+        }
+        &--title {
+            margin-top: 5px;
+            line-height: 20px;
+            color: $text-color;
+            margin-bottom: 10px;
+            a {
+                color: $primary;
+                font-size: 16px;
+                display: block;
+                &:after {
+                    display: none;
+                }
+            }
+            .document_webcast {
+                margin-top: 5px;
+            }
+            .btn-primary {
+                display: inline-block;
+                color: #fff;
+                margin-top: 5px;
+                &:hover {
+                    background-color: #c4cbde;
+                    color: #404040;
+                }
+            }
+        }
+    }
+}
+.event_attachments {
+    margin-top: 10px;
+    a {
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+}
+
+.arrange-content {
+    padding: 0;
+    border: 0;
+}
+
+.document_title {
+    h5 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 15px 0;
+        color: #212529;
+    }
+}
+.document_title1 {
+    h1 {
+        font-weight: 500;
+        margin: 15px 0;
+        color: #212529;
+    }
+}
+.agm-content__list {
+    margin-bottom: 10px;
+    p {
+        display: inline-block;
+    }
+}
+.document_list {
+    &__left {
+        &__file-name {
+            &--filename-data {
+                font-size: 18px;
+                font-weight: 500;
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

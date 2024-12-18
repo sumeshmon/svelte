@@ -1,0 +1,40 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+    &__selected {
+        padding: 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    &__option {
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        text-align: left;
+        &:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        &s {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            width: 100%;
+            z-index: 1000;
+        }
+    }
+
+    &__icon {
+        width: 17px;
+        float: right;
+    }
+}

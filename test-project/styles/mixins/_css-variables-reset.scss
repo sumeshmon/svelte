@@ -1,0 +1,5 @@
+:root {
+    @each $color, $value in $css-variables-reset {
+        --#{$color}: #{$value};
+    }
+}

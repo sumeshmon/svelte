@@ -1,0 +1,14 @@
+{
+    "search": {
+        "en": {
+            "analyzer": "english",
+            "website": "kkr2",
+            "searchPath": "/en/search"
+        },
+        "de": {
+            "analyzer": "english",
+            "website": "mastertemplate_english",
+            "searchPath": "/de/suche"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "404": {
+        "head_title": "Fehler 404 nicht gefunden",
+        "page_title": "404 Seite nicht gefunden!.",
+        "page_description": "<p>Die angeforderte URL wurde auf diesem Server nicht gefunden.</p>"
+    },
+    "400": {
+        "head_title": "Fehler 400: Ungültige Anfrage",
+        "page_title": "400. Ungültige Anfrage.",
+        "page_description": "<p>Die Anfrage kann aufgrund fehlerhafter Syntax nicht erfüllt werden.</p>"
+    },
+    "403": {
+        "head_title": "Fehler 403 - verboten",
+        "page_title": "403 Verboten.",
+        "page_description": "<p>Sie verfügen nicht über die Berechtigung, auf die angeforderte URL zuzugreifen</p>"
+    },
+    "500": {
+        "head_title": "Etwas ist schief gelaufen",
+        "page_title": "Etwas ist schief gelaufen",
+        "page_description": "<p>Wir scheinen einige technische Schwierigkeiten zu haben. Versuchen Sie, die Seite neu zu laden.</p><p>Melden Sie dies, wenn das Problem weiterhin besteht.</p>"
+    },
+    "default": {
+        "head_title": "Etwas ist schief gelaufen",
+        "page_title": "Etwas ist schief gelaufen",
+        "page_description": "<p>Wir scheinen einige technische Schwierigkeiten zu haben. Versuchen Sie, die Seite neu zu laden.</p><p>Melden Sie dies, wenn das Problem weiterhin besteht.</p>"
+    }
+}

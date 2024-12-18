@@ -1,0 +1,21 @@
+{
+    "/en/documents": "/en/documents",
+
+    "/en/contact": "/en/contact",
+    "/en/contact/alert": "/en/contact/alert",
+    "/en/contact/email": "/en/contact/email",
+    "/en/contact/event_reminder": "/en/contact/event_reminder",
+
+    "/en/events": "/en/events",
+    "/en/events/box": "/en/events/box",
+    "/en/events/filter": "/en/events/filter",
+
+    "/en/shareholder": "/en/shareholder",
+
+    "/en/search": "/en/search",
+    "/en/news/[slug]/[newsId]": "/en/news/[slug]/[newsId]",
+    "/en/news": "/en/news",
+
+    "/en/people-profile/[slug]/[id]": "/en/people-profile/[slug]/[id]",
+    "/en/people-profile": "/en/people-profile"
+}

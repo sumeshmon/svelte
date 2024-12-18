@@ -1,0 +1,52 @@
+.accordion {
+    &__item {
+    }
+    &__heading {
+        background-color: $grey-bright;
+        position: relative;
+        border-bottom: 1px solid #e0e3eb;
+        &:hover {
+            background-color: #e6e6e6;
+            color: $text-color;
+        }
+    }
+    &__title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        padding: 15px 40px 15px 15px;
+        transition: 0.3s all ease-in-out;
+        color: $text-color;
+        cursor: pointer;
+        position: relative;
+        border: none;
+        outline: none;
+        text-align: left;
+        &:focus,
+        &:active {
+            border: none;
+            outline: none;
+        }
+        &:after {
+            content: $icon-master-arrow-down-2;
+            font-family: $font-family-icon;
+            position: absolute;
+            right: 10px;
+            font-size: 15px;
+            transition: 0.3s ease-in-out;
+        }
+        &[aria-expanded='true'] {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__body {
+        padding: 15px;
+        p {
+            margin: 1em 0;
+        }
+    }
+}

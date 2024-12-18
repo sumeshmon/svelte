@@ -1,0 +1,84 @@
+.primary-color {
+    color: $primary;
+}
+.primary-bg {
+    background-color: $primary;
+}
+.grey-bg {
+    background-color: $grey;
+}
+.grey-color {
+    color: $grey;
+}
+.secondary-bg {
+    background-color: $secondary;
+}
+.grey-bright-bg {
+    background-color: $grey-bright;
+}
+.grey-light-bg {
+    background-color: $grey-light;
+}
+.grey-inactive-bg {
+    background-color: $grey-inactive;
+}
+.text {
+    &-underline {
+        text-decoration: underline;
+    }
+    &-strike-through {
+        text-decoration: line-through;
+    }
+    &-superscript {
+        vertical-align: super;
+        font-size: smaller;
+    }
+    &-subscript {
+        vertical-align: sub;
+        font-size: smaller;
+    }
+    &-right {
+        text-align: right;
+    }
+    &-center {
+        text-align: center;
+    }
+    &-left {
+        text-align: left;
+    }
+}
+.font {
+    &-weight {
+        &-normal {
+            font-weight: normal;
+        }
+        &-bold {
+            font-weight: bold;
+        }
+        &-lighter {
+            font-weight: lighter;
+        }
+        &-bolder {
+            font-weight: bolder;
+        }
+        @for $i from 100 through 900 {
+            &-#{$i} {
+                font-weight: $i;
+            }
+        }
+    }
+}
+h2 {
+    small {
+        display: block;
+        font-size: 13px;
+        font-weight: normal;
+    }
+}
+.load-more-pagination {
+    display: flex;
+    flex-direction: column;
+}
+.footnote {
+    font-size: 12px;
+}

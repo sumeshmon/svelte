@@ -1,0 +1,28 @@
+{
+    "addToCalendar": "Add to calendar",
+    "noItemsFound": "Currently there are no events scheduled.",
+    "modalTitle": "Save the date",
+    "date": "Date",
+    "title": "Title",
+    "location": "Location",
+    "years": "Years",
+    "category": "Category",
+    "item_per_page": "Items Per Page",
+    "eventListingByCategory": "Events Listing By Category",
+    "eventListingUpcoming": "Upcoming Events Listing",
+    "eventListingPast": "Past Events Listing",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "box": {
+        "heading": {
+            "date": "Date",
+            "title": "Event",
+            "annual_reports-quarterly_reports": "Reports",
+            "presentations": "Presentations",
+            "factsheets": "Factsheets",
+            "consensus": "Consensus",
+            "webcasts": "Webcasts",
+            "GeneralizedNews": "News"
+        }
+    }
+}

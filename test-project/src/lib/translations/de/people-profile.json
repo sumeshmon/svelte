@@ -1,0 +1,5 @@
+{
+    "title": "People Profile (de)",
+    "noItemsFound": "Zu diesem Bereich liegen derzeit keine Daten vor.",
+    "detailLink": "{{base}}{{lang}}/personenprofil/{{slug}}/{{id}}"
+}

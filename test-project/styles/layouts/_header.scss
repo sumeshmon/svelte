@@ -1,0 +1,12 @@
+.header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: $header-bg;
+    &__top-bar {
+        background-color: $grey;
+        height: 30px;
+    }
+}

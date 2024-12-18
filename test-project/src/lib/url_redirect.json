@@ -1,0 +1,5 @@
+{
+    "/en/document1?test=123": "/en/documents?page=2",
+    "/en/document2": "https://www.google.com/",
+    "/websites/mastertemplate/English/1070/ir-contact.html": "/en/contact"
+}

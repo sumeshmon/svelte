@@ -1,0 +1,184 @@
+{
+    "contact_form": {
+        "heading": "Contact Form",
+        "successfully_subscribed": "Success. Please check your email to confirm this subscription",
+        "successfully_direct_subscribed": "Thank you for being awesome! We have received your message and would like to thank you for writing to us. In the meantime, make sure to follow us on [LinkedIn/Twitter].",
+        "labels": {
+            "email": "Email",
+            "first_name": "First Name",
+            "middle_name": "Middle Name",
+            "last_name": "Last Name",
+            "company": "Company",
+            "gender": "Gender",
+            "job_title": "Job Title",
+            "salutation": "Salutation",
+            "description": "Description",
+            "occupation": "Occupation",
+            "other_emails": {
+                "reception": "Email Address Reception"
+            },
+            "street_name": "Street/No.",
+            "postal_code": "Zip Code",
+            "city": "City",
+            "country": "Country",
+            "phone": "Phone No.",
+            "other_phones": {
+                "reception": "Phone No. Reception",
+                "mobile_business": "Mobile Phone",
+                "mobile_private": "Mobile Private"
+            },
+            "faxes": {
+                "reception": "Fax"
+            },
+            "age": "Age",
+            "age_group": "Age Group",
+            "affiliation": "Please choose your affiliation"
+        },
+        "buttons": {
+            "submit": "Submit",
+            "back_button": "Back"
+        },
+        "prompts": {
+            "try_again": "Please, try again"
+        },
+        "errors": {
+            "email_required": "Email is required",
+            "alert_topic_required": "Please, choose atleast one topic to subscribe to"
+        }
+    },
+    "email_alert_form": {
+        "heading": "Email Alert Form",
+        "heading_unsub": "UnSubscribe Form",
+        "update_heading": "Update Email Alet Form",
+        "successfully_subscribed": "Thank you for your interest in Eqs group ag. You will receive an email shortly. Please confirm your email address by clicking the link inside.",
+        "successfully_unsubscribed": "You will receive an email shortly. Please confirm the termination of your subscription by clicking the link inside.",
+        "successfully_subscriber_updated": "Thank you for updating your details.",
+        "labels": {
+            "email": "E-Mail",
+            "first_name": "First Name",
+            "middle_name": "Middle Name",
+            "last_name": "Last Name",
+            "company": "Company",
+            "gender": "Gender",
+            "academic_title": "Academic Title",
+            "salutation": "Salutation",
+            "description": "Description",
+            "occupation": "Occupation",
+            "other_emails": {
+                "reception": "Email Address Reception"
+            },
+            "country": "Country",
+            "affiliation": "Ir Mailing List"
+        },
+        "buttons": {
+            "submit": "Submit",
+            "back_button": "Back to the form"
+        },
+        "prompts": {
+            "try_again": "Please, try again"
+        },
+        "errors": {
+            "alert_topic_required": "Please, choose atleast one topic to subscribe to"
+        }
+    },
+    "confirm_subscription": {
+        "statuses": {
+            "confirmation_inprogress": "Verifying",
+            "confirmation_successful": "Confirmation Successful",
+            "confirmation_failed": "Confirmation Failed"
+        },
+        "successfully_subscribed": "Subscription confirmation successful"
+    },
+    "confirm_unsubscription": {
+        "statuses": {
+            "confirmation_inprogress": "Verifying",
+            "confirmation_successful": "Confirmation Successful",
+            "confirmation_failed": "Confirmation Failed"
+        },
+        "successfully_unsubscribed": "You have successfully terminated your subscription and will no longer receive updates."
+    },
+    "generic": {
+        "preferred_language_choose": "Choose your preferred language.",
+        "privacy_text": "I have read the data <a href='https://www.eqs.com/about-eqs/cookie-policy/'>privacy policy</a>",
+        "languages": {
+            "en": "English",
+            "de": "German"
+        },
+        "buttons": {
+            "submit": "Submit"
+        },
+        "prompts": {
+            "try_again": "Please, try again",
+            "please_choose": "Please choose"
+        },
+        "errors": {
+            "unknown": "Unknown error"
+        },
+        "validation": {
+            "required": "{{field}} is required",
+            "email_required": "{{field}} is not a valid email",
+            "category_select_one": "Please select at least one category"
+        }
+    },
+    "dropdown_options": {
+        "gender": {
+            "male": "Male",
+            "female": "Female",
+            "unknown": "Unknown",
+            "neutral": "Neutral"
+        },
+        "salutation": {
+            "male": "Mr",
+            "female": "Ms",
+            "neutral": "Diverse",
+            "formal": "Formal",
+            "informal": "Informal"
+        },
+        "affiliation": {
+            "private_investor": "Private_Investor",
+            "institutional_investor": "Institutional_Investor",
+            "analyst": "Analyst",
+            "journalist": "Journalist",
+            "other": "Other"
+        }
+    },
+    "category_list": {
+        "general": {
+            "headline": "General",
+            "us-press-releases": "US Press Releases",
+            "events": "Events",
+            "eod-stock-price": "EOD Stock Price",
+            "weekly-stock-price": "Weekly Stock Price",
+            "cockpit-news": "Cockpit News",
+            "custom-news": "Custom News"
+        },
+        "sec_filings": {
+            "headline": "Sec Filings",
+            "sec_all": "All Form Types",
+            "annual_report": "Annual Report",
+            "proxies": "Proxies",
+            "quarterly_reports": "Quarterly Reports",
+            "insider_trading": "Insider Trading",
+            "8_k": "8-K"
+        },
+        "uk_reg_news": {
+            "headline": "UK Reg News",
+            "uk_reg_news": "All Categories",
+            "uk_reg_news_company_announcement_general": "Company Announcement - General",
+            "uk_reg_news_mergers_acquisitions_and_disposals": "Mergers, Acquisitions and Disposals",
+            "uk_reg_news_results_and_trading_reports": "Results and Trading Reports",
+            "uk_reg_news_executive_changes": "Executive Changes",
+            "uk_reg_news_directors_dealings": "Directors' Dealings",
+            "uk_reg_news_advance_notice_of_results": "Advance Notice Of Results",
+            "uk_reg_news_transaction_in_own_shares": "Transaction in Own Shares",
+            "uk_reg_news_holdings_in_company": "Holding(s) in Company",
+            "uk_reg_news_dividends": "Dividends"
+        },
+        "hk_news": {
+            "headline": "HK News",
+            "hk_news_all": "All Categories",
+            "hk_news_announcements_circulars": "Announcements & Circulars",
+            "hk_news_financial_reports": "Financial Reports"
+        }
+    }
+}

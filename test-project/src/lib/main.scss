@@ -1,0 +1,65 @@
+@import 'styles/common/variables';
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import '~bootstrap/scss/bootstrap';
+@import '~selectric/public/selectric.css';
+@import '~swiper/swiper-bundle.css';
+
+/** Import theme styles */
+@import 'styles/mixins/breakpints';
+@import 'styles/mixins/css-variables-reset';
+@import 'styles/fonts/icomoon';
+@import 'styles/common/typography';
+@import 'styles/fonts/fonts';
+@import 'styles/layouts/header';
+@import 'styles/layouts/home';
+@import 'styles/layouts/page';
+@import 'styles/layouts/pdf';
+@import 'styles/components/nav-bar';
+@import 'styles/components/menu';
+@import 'styles/components/language-selector';
+@import 'styles/components/banner';
+@import 'styles/components/people-profile';
+@import 'styles/components/website_content';
+@import 'styles/components/price-ticker';
+@import 'styles/components/ipo';
+@import 'styles/components/ir-contact';
+@import 'styles/components/breadcrumb';
+@import 'styles/components/shareholder-structure';
+@import 'styles/components/dialog';
+@import 'styles/components/btn';
+@import 'styles/components/fdl';
+@import 'styles/components/document';
+@import 'styles/components/events';
+@import 'styles/components/sec-filing';
+
+@import 'styles/common/global';
+@import 'styles/components/forms';
+@import 'styles/components/tab';
+@import 'styles/components/pagination';
+@import 'styles/components/table';
+@import 'styles/components/popup';
+@import 'styles/components/icons';
+@import 'styles/components/accordion';
+@import 'styles/components/disclaimer';
+@import 'styles/components/key-figures';
+@import 'styles/components/search';
+@import 'styles/components/agm';
+@import 'styles/components/loader';
+@import 'styles/layouts/footer';
+
+@import 'styles/components/news';
+@import 'styles/components/sec-filing';
+@import 'styles/components/contact';
+@import 'styles/components/governance_documents';
+@import 'styles/components/committee_composition';
+@import 'styles/components/dropdown';
+@import 'styles/components/ep-slider';
+@import 'styles/components/facts_figures';
+@import 'styles/components/flipbook';
+@import 'styles/components/glossary';

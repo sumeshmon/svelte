@@ -1,0 +1,15 @@
+{
+    "footerMenu": {
+        "menu1": "Über uns",
+        "menu2": "Public Affairs",
+        "menu3": "Esg",
+        "menu4": "Unsere Marken & Services",
+        "menu5": "Compliance"
+    },
+    "footerLinks": {
+        "link1": "Impressum & rechtliche Hinweise",
+        "link2": "Datenschutzerklärung",
+        "link3": "Cookie-Richtlinie"
+    },
+    "copyRights": "Copyright © {{field}} Master Template"
+}

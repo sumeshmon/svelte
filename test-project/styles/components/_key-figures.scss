@@ -1,0 +1,44 @@
+//counter
+
+.key-figures-counter {
+    display: flex;
+    flex-direction: row;
+    &__number {
+        font-size: 3rem;
+        font-weight: bold;
+        color: $secondary;
+        margin-bottom: 15px;
+    }
+    &__symbol {
+        font-size: 2rem;
+    }
+
+    &__text {
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
+
+//Simple listing
+
+.key-figures-simple-listing {
+    margin: 15px 0;
+
+    &__number {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    &__title {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+        color: $secondary;
+    }
+    &__description {
+    }
+}

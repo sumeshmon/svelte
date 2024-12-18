@@ -1,0 +1,85 @@
+.people-profile {
+    padding: 15px 0;
+    background: $grey-bright;
+    margin-bottom: 15px;
+    &__wrapper {
+        margin-bottom: 50px;
+    }
+    &__detail {
+        padding: 10px 0;
+        &-image {
+        }
+        &-accordion {
+            .people-profile-accordion__title {
+                padding: 0;
+                padding-right: 40px;
+            }
+        }
+    }
+    &__contact {
+        padding: 10px 0;
+        &-link {
+            display: inline-block;
+            padding: 5px;
+        }
+    }
+    &__popup {
+        margin-bottom: 10px;
+        &-button {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+        &-icon {
+            font-size: 18px;
+            position: relative;
+            top: 3px;
+            left: 4px;
+        }
+    }
+
+    &__accordion {
+        margin-bottom: 10px;
+    }
+    &-accordion {
+        display: inline-block;
+        &__heading {
+            position: relative;
+        }
+        &__title {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            display: inline-block;
+            padding: 10px 40px 5px 0px;
+            transition: 0.3s all ease-in-out;
+            color: $text-color;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            outline: none;
+            text-align: left;
+            &:focus,
+            &:active {
+                border: none;
+                outline: none;
+            }
+            &:after {
+                content: $icon-master-arrow-down-6;
+                font-family: $font-family-icon;
+                position: absolute;
+                right: 10px;
+                font-size: 15px;
+                transition: 0.3s ease-in-out;
+            }
+            &[aria-expanded='true'] {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__additional-info {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "doublePageMode": "Doppelseitenmodus",
+    "downloadPDFFile": "PDF herunterladen",
+    "gotoFirstPage": "Erste Seite",
+    "gotoLastPage": "Letzte Seite",
+    "loading": "Laden",
+    "mailBody": "Siehe dir diese Seite an {{url}}",
+    "mailSubject": "Siehe dir dieses FlipBook an",
+    "nextPage": "Nächste Seite",
+    "pause": "AutoPlay Pause",
+    "play": "AutoPlay Start",
+    "previousPage": "Vorherige Seite",
+    "share": "Teilen",
+    "singlePageMode": "Einzelseitenmodus",
+    "toggleFullscreen": "Vollbild",
+    "toggleHelp": "Hilfe",
+    "toggleOutline": "Lesezeichen",
+    "toggleSound": "Ton",
+    "toggleThumbnails": "Miniaturansicht",
+    "zoomIn": "Hinzoomen",
+    "zoomOut": "Herauszoomen"
+}

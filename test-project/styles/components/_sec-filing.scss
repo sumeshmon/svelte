@@ -1,0 +1,108 @@
+.sec-list-holder {
+    margin-bottom: 30px;
+    .table {
+        thead {
+            th {
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+        tbody {
+            td {
+                &:last-child {
+                    text-align: right;
+                }
+
+                a {
+                    width: 30px;
+                    height: 30px;
+                    margin-top: 0px;
+                    margin-right: 2px;
+                    margin-left: 2px;
+                    border: 2px solid $primary;
+                    color: $primary;
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 30px;
+                    transition: 0.2s all ease-in-out;
+                    overflow: hidden;
+                    position: relative;
+                    &:before {
+                        transition: 0.2s all ease-in-out;
+                    }
+                    &:after {
+                        content: '\72';
+                        font-family: $font-family-icon;
+                        position: absolute;
+                        width: 26px;
+                        height: 26px;
+                        background-color: $link-hover-color;
+                        font-size: 18px;
+                        color: $white;
+                        transition: 0.2s all ease-in-out;
+                        right: -100%;
+                        line-height: 26px;
+                    }
+
+                    &:hover {
+                        background-color: $link-hover-color;
+                        color: $white;
+                        border-color: $link-hover-color;
+                        &:before {
+                            transform: translateX(-200%);
+                        }
+                        &:after {
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec-filing-outer-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.sec-filing-wrapper {
+    td {
+        vertical-align: middle;
+    }
+    .sec-filing {
+        &-filters {
+            padding-bottom: 20px;
+        }
+    }
+    .sec-filing-downloads {
+        display: flex;
+        gap: 8px;
+
+        &__item {
+            cursor: pointer;
+            * {
+                pointer-events: none;
+            }
+            &--button {
+                border: 1px solid #f60;
+                color: #f30;
+                margin: 1px;
+                padding: 0.5rem;
+                font-size: 13px;
+                line-height: 14px;
+                &:hover {
+                    background-color: #f60;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .search-input {
+        height: 40px;
+    }
+}

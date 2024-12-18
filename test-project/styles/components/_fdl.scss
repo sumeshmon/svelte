@@ -1,0 +1,70 @@
+.fdl {
+    margin-bottom: 50px;
+    &__category,
+    &__year {
+        &-heading {
+            display: block;
+            border-bottom: solid 1px $border-color;
+            padding: 10px;
+        }
+        &-item {
+            border-bottom: solid 1px $border-color;
+            padding: 10px;
+        }
+    }
+    &__category {
+        &-item {
+            padding: 13px 10px;
+            white-space: nowrap;
+        }
+    }
+    &__year {
+        text-align: center;
+        &-item {
+            &-active,
+            &-empty,
+            &-inactive {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: $grey;
+                display: inline-block;
+                color: $white;
+                font-size: 14px;
+                line-height: 30px;
+                margin: 0 5px;
+            }
+            &-active {
+                background-color: $primary;
+                &:hover {
+                    text-decoration: none;
+                    background-color: $secondary;
+                    color: $white;
+                }
+            }
+            &-empty {
+                background: none;
+                height: 23px;
+            }
+        }
+    }
+    &-slider {
+        user-select: none;
+        &__swiper {
+            &-arrows {
+                top: 20px;
+                &:after {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    &-slide {
+        &__full {
+            min-width: 100% !important;
+        }
+        &__half {
+            min-width: 50% !important;
+        }
+    }
+}

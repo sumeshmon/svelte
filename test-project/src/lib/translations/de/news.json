@@ -1,0 +1,19 @@
+{
+    "date": "Datum",
+    "title": "Titel",
+    "type": "Type",
+    "location": "Ort",
+    "years": "Jahre",
+    "category": "Kategorie",
+    "noItemsFound": "Für diesen Bereich sind aktuell keine News vorhanden.",
+    "dateOfPublication": "Datum der Veröffentlichung",
+    "thresholdDate": "Datum an dem die Schwelle überschritten oder erreicht wurde",
+    "legalEntity": "Juristische Person",
+    "registeredOffice": "Registrierter Sitz, Staat",
+    "totalPositions": "Gesamtstimmrechtsanteile: Summe Anteile / Gesamtzahl der Stimmrechte",
+    "datePlaceholderTill": "Till ...",
+    "datePlaceholderFrom": "From ...",
+    "datePlaceholder": "YYYY-MM-DD",
+    "dateFilterFormat": "yyyy-MM-dd",
+    "detailLink": "{{base}}{{lang}}/nachrichten/{{slug}}/{{id}}"
+}

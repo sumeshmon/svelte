@@ -1,0 +1,89 @@
+.nav-bar {
+    &__wrapper {
+        @include media-up(xl) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__logo {
+        height: 90px;
+        float: left;
+        display: flex;
+        align-items: center;
+        &-link {
+            display: inline-block;
+        }
+    }
+    &__burger-menu {
+        display: none;
+        &-home {
+            display: none;
+        }
+        &-close {
+            display: none;
+        }
+        @include media-down(lg) {
+            padding-top: 29px;
+            float: right;
+            display: block;
+            &-button {
+                font-family: $font-family-icon;
+                font-size: 30px;
+                line-height: 1em;
+                text-align: right;
+                color: $white;
+                display: inline-block;
+                background: none;
+                box-shadow: none;
+                width: 40px;
+                padding: 0;
+                border: none;
+                &:hover {
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+            &-home {
+                line-height: 37px;
+                font-weight: 300;
+                font-size: 24px;
+                font-family: $font-family-icon;
+                color: $primary;
+                padding-left: 40px;
+                display: inline-block;
+            }
+            &-close {
+                display: inline-block;
+                float: right;
+                font-family: $font-family-icon;
+                color: $primary;
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+                cursor: pointer;
+                padding: 0;
+                padding-right: 30px;
+                border: none;
+                background: none;
+            }
+        }
+    }
+    &__nav {
+        @include media-down(lg) {
+            position: fixed;
+            left: -100%;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            padding-top: 40px;
+            background-color: $white;
+            transition: all 0.3s ease;
+        }
+        &.active {
+            @include media-down(lg) {
+                left: 0;
+            }
+        }
+    }
+}

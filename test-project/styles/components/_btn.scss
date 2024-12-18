@@ -1,0 +1,42 @@
+.btn {
+    border: solid 1px $border-color;
+    color: $text-color;
+    vertical-align: initial;
+    &:hover {
+        border-color: $primary;
+        text-decoration: none;
+    }
+    &-primary {
+        color: $white;
+        border-color: $primary;
+        background-color: $primary;
+        &:hover {
+            color: $white;
+            border-color: $secondary;
+            background-color: $secondary;
+        }
+    }
+    &-secondary {
+        color: $white;
+        border-color: $secondary;
+        background-color: $secondary;
+        &:hover {
+            color: $white;
+            border-color: $primary;
+            background-color: $primary;
+        }
+    }
+    &-outline {
+        &-primary {
+            &:hover {
+                color: $white;
+            }
+        }
+        &-secondary {
+            &:hover {
+                border-color: $secondary;
+                color: $white;
+            }
+        }
+    }
+}

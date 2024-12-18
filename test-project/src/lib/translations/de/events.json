@@ -1,0 +1,28 @@
+{
+    "addToCalendar": "Zum Kalender hinzufügen",
+    "noItemsFound": "Aktuell stehen keine Termine an.",
+    "modalTitle": "Speichern Sie das Datum",
+    "date": "Date",
+    "title": "Title",
+    "location": "Location",
+    "years": "Jahre",
+    "category": "Kategorie",
+    "item_per_page": "Ergebnisse pro Seite",
+    "eventListingByCategory": "Veranstaltungsliste nach Kategorie",
+    "eventListingUpcoming": "Kommende Veranstaltungsliste",
+    "eventListingPast": "Vergangene Veranstaltungsliste",
+    "upcoming": "Bevorstehend",
+    "past": "Vergangen",
+    "box": {
+        "heading": {
+            "date": "Date",
+            "title": "Event",
+            "annual_reports-quarterly_reports": "Reports",
+            "presentations": "Presentations",
+            "factsheets": "Factsheets",
+            "consensus": "Consensus",
+            "webcasts": "Webcasts",
+            "GeneralizedNews": "News"
+        }
+    }
+}

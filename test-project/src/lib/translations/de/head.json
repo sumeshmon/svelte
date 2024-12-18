@@ -1,0 +1,122 @@
+{
+    "ipo": {
+        "title": "IPO",
+        "meta": {
+            "description": "IPO description"
+        }
+    },
+    "documents": {
+        "title": "Documents",
+        "meta": {
+            "description": "Documents description"
+        }
+    },
+    "agm": {
+        "title": "AGM",
+        "meta": {
+            "description": "AGM description"
+        }
+    },
+    "fdl": {
+        "title": "FDL",
+        "meta": {
+            "description": "FDL description"
+        }
+    },
+    "events": {
+        "title": "Events",
+        "meta": {
+            "description": "Events description"
+        }
+    },
+    "eventBox": {
+        "title": "Event Box",
+        "meta": {
+            "description": "Event Box description"
+        }
+    },
+    "eventFilter": {
+        "title": "Event Filter",
+        "meta": {
+            "description": "Event Filter description"
+        }
+    },
+    "share": {
+        "title": "Share",
+        "meta": {
+            "description": "Share description"
+        }
+    },
+    "news": {
+        "title": "News Listing",
+        "meta": {
+            "description": "News Listing description"
+        }
+    },
+    "secFiling": {
+        "title": "SEC Filing",
+        "meta": {
+            "description": "SEC Filing description"
+        }
+    },
+    "peopleProfile": {
+        "title": "People Profile",
+        "meta": {
+            "description": "People Profile description"
+        }
+    },
+    "factsFigures": {
+        "title": "Facts & Figures",
+        "meta": {
+            "description": "Facts & Figures description"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "meta": {
+            "description": "Contact description"
+        }
+    },
+    "eventReminder": {
+        "title": "Event Reminder",
+        "meta": {
+            "description": "Event Reminder description"
+        }
+    },
+    "emailAlert": {
+        "title": "Email Alert",
+        "meta": {
+            "description": "Email Alert description"
+        }
+    },
+    "sendMail": {
+        "title": "Send Mail",
+        "meta": {
+            "description": "Send Mail description"
+        }
+    },
+    "flipBook": {
+        "title": "Flipbook",
+        "meta": {
+            "description": "Flipbook"
+        }
+    },
+    "financialGlossary": {
+        "title": "Financial Glossary",
+        "meta": {
+            "description": "Financial Glossary description"
+        }
+    },
+    "reports": {
+        "title": "Reports",
+        "meta": {
+            "description": "Reports description"
+        }
+    },
+    "e-paper": {
+        "title": "E Paper",
+        "meta": {
+            "description": "E Paper description"
+        }
+    }
+}

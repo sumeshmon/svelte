@@ -1,0 +1,243 @@
+{
+    "contact_form": {
+        "heading": "Abonnieren",
+        "successfully_subscribed": "Erfolg. Bitte überprüfen Sie Ihre E-Mail, um dieses Abonnement zu bestätigen",
+        "successfully_direct_subscribed": "Thank you for being awesome! We have received your message and would like to thank you for writing to us. In the meantime, make sure to follow us on [LinkedIn/Twitter].",
+        "labels": {
+            "email": "E-Mail",
+            "first_name": "Vorname",
+            "middle_name": "Zweiter Vorname",
+            "last_name": "Nachname",
+            "company": "Gesellschaft",
+            "gender": "Geschlecht",
+            "academic_title": "Akademischer Titel",
+            "salutation": "Anrede",
+            "country": "Land",
+            "description": "Beschreibung",
+            "occupation": "Beruf",
+            "alert_topic": "Alert Topic",
+            "dl_types": {
+                "general": "General",
+                "sec_filing": "Sec Filing",
+                "uk_reg_news": "UK Reg News",
+                "hk_news": "HK News"
+            },
+            "dls": {
+                "us_press_releases": "US Press Releases DE",
+                "eod_stock_price": "EOD Stock Price",
+                "weekly_stock_price": "Weekly Stock Price",
+                "cockpit_news": "Cockpit News",
+                "custom_news": "Custom News",
+                "all_categories": "All Categories",
+                "annual_report": "Annual Report",
+                "proxies": "Proxies",
+                "quarterly_reports": "Quarterly Reports",
+                "insider_trading": "Insider Trading",
+                "8_k": "8-K",
+                "company_announce_general": "Company Announcement - General",
+                "mergers_acquisitions_disposals": "Mergers, Acquisitions and Disposals",
+                "results_trading_reports": "Results and Trading Reports",
+                "executive_changes": "Executive Changes",
+                "directors_dealings": "Directors' Dealings",
+                "advanced_notice_results": "Advance Notice Of Results",
+                "transaction_own_shares": "Transaction in Own Shares",
+                "holdings_in_company": "Holding(s) in Company",
+                "dividends": "Dividends",
+                "annoucements_circulars": "Announcements & Circulars",
+                "financial_reports": "Financial Reports"
+            },
+            "street_name": "Straße/Hausnummer",
+            "postal_code": "Postleitzahl",
+            "city": "Stadt",
+            "phone": "Telefonnummer",
+            "other_emails": {
+                "reception": "E-Mail Empfänger"
+            },
+            "other_phones": {
+                "reception": "Durchwahl",
+                "mobile_business": "Mobil (geschäftlich)",
+                "mobile_private": "Mobil (privat)"
+            },
+            "age": "Alter",
+            "age_group": "Altersgruppe",
+            "affiliation": "Funktion"
+        },
+        "buttons": {
+            "submit": "Einreichen",
+            "back_button": "Zurück!"
+        },
+        "prompts": {
+            "try_again": "Bitte versuche es erneut"
+        }
+    },
+    "email_alert_form": {
+        "heading": "Aufnahme IR-Verteiler*",
+        "heading_unsub": "Abmeldeformular",
+        "update_heading": "Update Email Alet Form",
+        "sub_heading": "Angaben zur Person",
+        "successfully_subscribed": "Vielen Dank für Ihr Interesse an Eqs Group AG. Sie werden in Kürze eine E-Mail erhalten. Bitte bestätigen Sie Ihre E-Mail-Adresse, indem Sie auf den darin enthaltenen Link klicken",
+        "successfully_unsubscribed": "You will receive an email shortly. Please confirm the termination of your subscription by clicking the link inside.",
+        "successfully_subscriber_updated": "Thank you for updating your details.de",
+        "labels": {
+            "email": "E-Mail",
+            "first_name": "Vorname",
+            "middle_name": "Zweiter Vorname",
+            "last_name": "Nachname",
+            "company": "Gesellschaft",
+            "gender": "Geschlecht",
+            "title": "Titel",
+            "academic_title": "Akademisch Titel",
+            "affiliation": "IR-Verteiler",
+            "salutation": "Anrede",
+            "country": "Land",
+            "description": "Beschreibung",
+            "occupation": "Beruf",
+            "alert_topic": "Alert Topic",
+            "your_message": "Ihre Nachricht",
+            "privacy": "Datenschutz",
+            "privacy_text": "Sie erklären sich damit einverstanden, dass Ihre Daten zur Bearbeitung des Anliegens verwendet werden. (Weitere Informationen und Widerrufshinweise gibt es in der <a href='https://www.deutsche-konsum.de/datenschutzerklaerung/' target='_blank'>Datenschutzerklärung</a>.)",
+            "dl_types": {
+                "general": "General",
+                "sec_filing": "Sec Filing",
+                "uk_reg_news": "UK Reg News",
+                "hk_news": "HK News"
+            },
+            "dls": {
+                "us_press_releases": "US Press Releases de",
+                "eod_stock_price": "EOD Stock Price",
+                "weekly_stock_price": "Weekly Stock Price",
+                "cockpit_news": "Cockpit News",
+                "custom_news": "Custom News",
+                "all_categories": "All Categories",
+                "annual_report": "Annual Report",
+                "proxies": "Proxies",
+                "quarterly_reports": "Quarterly Reports",
+                "insider_trading": "Insider Trading",
+                "8_k": "8-K",
+                "company_announce_general": "Company Announcement - General",
+                "mergers_acquisitions_disposals": "Mergers, Acquisitions and Disposals",
+                "results_trading_reports": "Results and Trading Reports",
+                "executive_changes": "Executive Changes",
+                "directors_dealings": "Directors' Dealings",
+                "advanced_notice_results": "Advance Notice Of Results",
+                "transaction_own_shares": "Transaction in Own Shares",
+                "holdings_in_company": "Holding(s) in Company",
+                "dividends": "Dividends",
+                "annoucements_circulars": "Announcements & Circulars",
+                "financial_reports": "Financial Reports"
+            }
+        },
+        "buttons": {
+            "submit": "Senden",
+            "back_button": "Zurück zum Formular"
+        },
+        "prompts": {
+            "try_again": "Bitte versuche es erneut"
+        },
+        "errors": {
+            "alert_topic_required": "Please, choose atleast one topic to subscribe to"
+        }
+    },
+    "confirm_subscription": {
+        "statuses": {
+            "confirmation_inprogress": "Überprüfung",
+            "confirmation_successful": "Bestätigung erfolgreich",
+            "confirmation_failed": "Bestätigung fehlgeschlagen"
+        },
+        "successfully_subscribed": "Abonnementbestätigung erfolgreich"
+    },
+    "confirm_unsubscription": {
+        "statuses": {
+            "confirmation_inprogress": "Verifying",
+            "confirmation_successful": "Confirmation Successful",
+            "confirmation_failed": "Confirmation Failed"
+        },
+        "successfully_unsubscribed": "You have successfully terminated your subscription and will no longer receive updates."
+    },
+    "generic": {
+        "preferred_language_choose": "Wählen Sie Ihre bevorzugte Sprache.",
+        "privacy_text": "Ich habe die <a href='https://www.eqs.com/about-eqs/cookie-policy/'>gelesen</a>",
+        "languages": {
+            "en": "Englisch",
+            "de": "Deutsch"
+        },
+        "buttons": {
+            "submit": "Einreichen"
+        },
+        "prompts": {
+            "try_again": "Bitte versuche es erneut",
+            "please_choose": "Bitte auswählen"
+        },
+        "errors": {
+            "unknown": "Unbekannter Fehler"
+        },
+        "validation": {
+            "email_required": "Dieses Feld ist ein Pflichtfeld E-Mail",
+            "required": "Dieses Feld ist erforderlich.",
+            "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+            "category_select_one": "Bitte wählen Sie eine Option!"
+        }
+    },
+    "dropdown_options": {
+        "gender": {
+            "male": "Männlich",
+            "female": "weiblich",
+            "unknown": "Unbekannt",
+            "neutral": "Neutral"
+        },
+        "salutation": {
+            "formal": "Formell",
+            "informal": "Informell",
+            "male": "Herr",
+            "female": "Frau",
+            "neutral": "Divers"
+        },
+        "affiliation": {
+            "private_investor": "Privatanleger",
+            "institutional_investor": "Institutionelle Investoren",
+            "analyst": "Analysten",
+            "banks": "Banken",
+            "journalist": "Journalisten",
+            "other": "Sonstige"
+        }
+    },
+    "category_list": {
+        "general": {
+            "headline": "General",
+            "us-press-releases": "US Press Releases de",
+            "events": "Events",
+            "eod-stock-price": "EOD Stock Price",
+            "weekly-stock-price": "Weekly Stock Price",
+            "cockpit-news": "Cockpit News",
+            "custom-news": "Custom News"
+        },
+        "sec_filings": {
+            "headline": "Sec Filings",
+            "sec_all": "All Form Types",
+            "annual_report": "Annual Report",
+            "proxies": "Proxies",
+            "quarterly_reports": "Quarterly Reports",
+            "insider_trading": "Insider Trading",
+            "8_k": "8-K"
+        },
+        "uk_reg_news": {
+            "headline": "UK Reg News",
+            "uk_reg_news": "All Categories",
+            "uk_reg_news_company_announcement_general": "Company Announcement - General",
+            "uk_reg_news_mergers_acquisitions_and_disposals": "Mergers, Acquisitions and Disposals",
+            "uk_reg_news_results_and_trading_reports": "Results and Trading Reports",
+            "uk_reg_news_executive_changes": "Executive Changes",
+            "uk_reg_news_directors_dealings": "Directors' Dealings",
+            "uk_reg_news_advance_notice_of_results": "Advance Notice Of Results",
+            "uk_reg_news_transaction_in_own_shares": "Transaction in Own Shares",
+            "uk_reg_news_holdings_in_company": "Holding(s) in Company",
+            "uk_reg_news_dividends": "Dividends"
+        },
+        "hk_news": {
+            "headline": "HK News",
+            "hk_news_all": "All Categories",
+            "hk_news_announcements_circulars": "Announcements & Circulars",
+            "hk_news_financial_reports": "Financial Reports"
+        }
+    }
+}

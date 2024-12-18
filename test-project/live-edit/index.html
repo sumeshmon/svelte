@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Live Edit Demo</title>
+    </head>
+    <style>
+        #iframe-container {
+            margin: 20px;
+        }
+        #message {
+            background-color: green;
+            display: none;
+            margin: 20px;
+            color: #ffff;
+            padding: 20px;
+        }
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <body>
+        <div id="message"></div>
+        <div id="iframe-container"></div>
+
+        <script>
+            let iframeUrl = 'http://localhost:{{port}}/';
+            let paddingFix = 40;
+
+            window.addEventListener('message', (event) => {
+                let height = document.body.clientHeight - paddingFix;
+                handleIframeReady(event);
+                generateIframe(height);
+                handleUpdate(event);
+            });
+            window.addEventListener('resize', (event) => {
+                let height = document.body.clientHeight - paddingFix;
+                generateIframe(height);
+            });
+
+            function handleUpdate(event) {
+                const payload = event.data.payload;
+                if (payload && typeof payload === 'object') {
+                    const id = payload.id;
+                    if (payload.action === 'editSubmit') {
+                        showMessage('Update request recieved');
+                    } else if (payload.action === 'updateStatus') {
+                        const isPublished = payload.data.attributes.isPublished;
+                        if (isPublished) {
+                            showMessage('Publish request recieved');
+                        } else {
+                            showMessage('Unpublish request recieved');
+                        }
+                    } else if (payload.action === 'presignedUrl') {
+                        showMessage('Image upload request recieved');
+                    }
+                    generateIframe(null, true, event.data.payload.data.urlToRedirect);
+                }
+            }
+
+            function handleIframeReady(event) {
+                if (!event.data || typeof event.data !== 'string') {
+                    return;
+                }
+
+                const isReady = getValueFromMessage(event.data, 'isReady');
+                const url = getValueFromMessage(event.data, 'url');
+                if (isReady == '1') {
+                    iframeUrl = url;
+                }
+            }
+
+            function showMessage(message) {
+                document.getElementById('message').innerHTML = message;
+                document.getElementById('message').style.display = 'block';
+                setTimeout(function () {
+                    document.getElementById('message').style.display = 'none';
+                }, 5000);
+            }
+
+            function getValueFromMessage(message, variable) {
+                const queryParams = message.split('&');
+                for (const param of queryParams) {
+                    const pair = param.split('=');
+                    if (decodeURIComponent(pair[0]) === variable) {
+                        return decodeURIComponent(pair[1]);
+                    }
+                }
+                return null;
+            }
+
+            function generateIframe(height = null, reset = false, url = '') {
+                const container = document.getElementById('iframe-container');
+
+                if (reset) {
+                    const existingIframe = container.querySelector('iframe');
+                    if (existingIframe) {
+                        existingIframe.remove();
+                    }
+                }
+
+                // Remove existing iframe if it exists
+                const existingIframe = container.querySelector('iframe');
+                if (existingIframe) {
+                    if (typeof height === 'number') {
+                        existingIframe.height = height;
+                    }
+                } else {
+                    const iframe = document.createElement('iframe');
+
+                    // Set the source URL for the iframe
+                    iframe.src = iframeUrl; // Change this to the desired URL
+                    // Set optional attributes
+                    iframe.width = '100%';
+                    if (typeof height === 'number') {
+                        iframe.height = height;
+                    }
+                    iframe.scrolling = 'scrolling';
+
+                    // Append the iframe to the container
+                    container.appendChild(iframe);
+                }
+            }
+            generateIframe();
+        </script>
+    </body>
+</html>

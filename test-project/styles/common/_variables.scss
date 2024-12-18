@@ -1,0 +1,143 @@
+$primary: #f60;
+$secondary: #13151b;
+$grey: #c4cbde;
+$grey-light: #ced4da;
+$grey-bright: #eceff8;
+$grey-inactive: #848485;
+$border-color: $grey-light;
+$header-bg: $secondary;
+$text-color: #212529;
+$footer-bg: #efe4d8;
+$link-color: $primary;
+$link-hover-color: $link-color;
+$font-family-base: 'Roboto', sans-serif;
+$font-family-primary: $font-family-base;
+$font-family-icon: 'icomoon-master';
+$white: #fff;
+$black: #000;
+$full-width: 100%;
+
+$heading-font-weight: 700;
+$spacer: 20px;
+
+$theme-colors: (
+    primary: $primary,
+    secondary: $secondary
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+/* Here you can reset CSS variables used by imported libraries */
+$css-variables-reset: (
+    'swiper-navigation-color': $primary,
+    'swiper-pagination-color': $primary,
+    'swiper-theme-color': $primary
+);
+
+$spacing-scale: (
+    0: 0,
+    1: 0.125,
+    2: 0.25,
+    3: 0.375,
+    4: 0.5,
+    5: 0.75,
+    6: 1,
+    7: 1.25,
+    8: 1.5,
+    9: 1.75,
+    10: 2,
+    11: 2.5,
+    12: 2.75,
+    13: 3,
+    14: 3.25,
+    15: 3.5,
+    16: 3.75,
+    17: 4,
+    18: 4.25,
+    19: 4.5,
+    20: 4.75,
+    21: 5
+);
+
+$pixel-scale: (
+    0: 0,
+    1: 2px,
+    2: 4px,
+    3: 6px,
+    4: 8px,
+    5: 12px,
+    6: 16px,
+    7: 20px,
+    8: 24px,
+    9: 32px,
+    10: 48px,
+    11: 50px,
+    12: 64px,
+    13: 75px,
+    14: 100px
+);
+
+// function to space as rem or em values
+@function space($n, $unit: rem) {
+    $value: map-get($spacing-scale, $n);
+
+    @if $value == null {
+        @warn "Spacing value '#{$n}' is not defined in the scale.";
+        @return null;
+    }
+
+    @if $unit == rem {
+        @return $value * 1rem;
+    } @else if $unit == em {
+        @return $value * 1em;
+    } @else {
+        @warn "Unsupported unit type '#{$unit}'. Defaulting to rem.";
+        @return $value * 1rem;
+    }
+}
+
+@function pixel-value($n) {
+    $value: map-get($pixel-scale, $n);
+
+    @if $value == null {
+        @warn "Pixel value '#{$n}' is not defined in the scale.";
+        @return null;
+    }
+
+    @return $value;
+}
+
+// use appropriate index to get the value. eg: rem(10) return 2rem
+@function rem($n) {
+    @return space($n);
+}
+
+// use appropriate index to get the value. eg: em(10) return 2em
+@function em($n) {
+    @return space($n, em);
+}
+
+// use appropriate index to get the value. eg: space-px(6) return 16px
+@function space-px($n) {
+    @return pixel-value($n);
+}
+
+// use appropriate index to get the value. eg: space-px(6) return 16px
+@function font-px($n) {
+    @return pixel-value($n);
+}

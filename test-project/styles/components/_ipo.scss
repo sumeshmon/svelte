@@ -1,0 +1,20 @@
+.ipo {
+    &__news {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border-bottom: solid 1px $border-color;
+        &-date {
+            margin-bottom: 10px;
+        }
+        &-title {
+            margin-bottom: 10px;
+        }
+        &-button {
+            display: block;
+        }
+    }
+    &__prospectus {
+        margin-top: 30px;
+    }
+}
