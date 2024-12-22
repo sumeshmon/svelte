@@ -9,7 +9,7 @@
     export let submenu: MenuItem[];
 </script>
 
-<ul class="menu__submenu menu__submenu--1">
+<ul class="customSubmenu">
     {#each submenu as item}
         {#if !item?.hideOnLang?.includes($locale)}
             {#if phases[item.phase] <= phases[PUBLIC_CURRENT_PHASE]}
@@ -24,9 +24,7 @@
                         {$t(item.title)}
                     </a>
                     {#if item.submenu?.length}
-                        <span
-                            class="menu__item-arrow menu__item-arrow--1 icon-master-arrow-down-2"
-                        />
+                       
                         <MenuLevel2 submenu={item.submenu} />
                     {/if}
                 </li>

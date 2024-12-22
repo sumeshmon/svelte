@@ -4,6 +4,9 @@
     import Navbar from '$components/Header/Navbar.svelte';
     import LanguageSelector from '$components/Header/LanguageSelector.svelte';
     import PriceTicker from './share/components/PriceTicker.svelte';
+    import CustomMenu from './CustomMenu.svelte';
+
+   
 </script>
 
 <header class="header">
@@ -22,6 +25,6 @@
     </div>
 
     <Navbar>
-        <Menu />
+        <CustomMenu/>
     </Navbar>
 </header>

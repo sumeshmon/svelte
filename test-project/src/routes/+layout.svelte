@@ -10,6 +10,39 @@
     import { afterUpdate } from 'svelte';
 
     onMount(() => {
+
+        // custom menu
+        const customMenuItems = document.querySelectorAll('.custom-menu > li'); // NodeList of menu items
+        customMenuItems.forEach((menuItem) => {
+            const submenu = menuItem.querySelector('.customSubmenu') as HTMLElement | null;
+
+            menuItem.querySelector('a')?.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                // Close all other submenus
+                customMenuItems.forEach((otherMenuItem) => {
+                    if (otherMenuItem !== menuItem) {
+                        otherMenuItem.classList.remove('custom-open');
+                        const otherSubmenu = otherMenuItem.querySelector('.customSubmenu') as HTMLElement | null;
+                        if (otherSubmenu) {
+                            otherSubmenu.style.display = 'none';
+                        }
+                    }
+                });
+
+                // Handle menu item toggle
+                if (submenu) {
+                    // Toggle submenu for items with a submenu
+                    menuItem.classList.toggle('custom-open');
+                    submenu.style.display = menuItem.classList.contains('custom-open') ? 'block' : 'none';
+                } else {
+                    // Simply toggle the class for items without a submenu
+                    menuItem.classList.toggle('custom-open');
+                }
+            });
+        });
+
+
         if (browser) {
             document.documentElement.lang = data.lang;
         }
