@@ -14,6 +14,8 @@
         // custom menu
         const customMenuItems = document.querySelectorAll('.custom-menu > li'); // NodeList of menu items
         customMenuItems.forEach((menuItem) => {
+            console.log(menuItem);
+            
             const submenu = menuItem.querySelector('.customSubmenu') as HTMLElement | null;
 
             menuItem.querySelector('a')?.addEventListener('click', (event) => {

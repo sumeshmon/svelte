@@ -8,13 +8,13 @@
 <GoogleAnalytics />
 <ETrackerAnalytics />
 
-<Header />
+<!-- <Header /> -->
 
 <main>
     <slot />
 </main>
 
-<Footer />
+<!-- <Footer /> -->
 
 <style lang="en">
     @import '$lib/main.scss';
