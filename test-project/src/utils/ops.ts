@@ -51,7 +51,7 @@ export const formatDate = (
     }
     const formatter = new Intl.DateTimeFormat(lang, {
         year: 'numeric',
-        month: 'long',
+        month: lang === 'de' && format['month'] === 'short' ? 'short' : 'long',
         day: '2-digit',
         ...format,
         ...options
@@ -65,7 +65,8 @@ export const formatDate = (
     for (const key of Object.keys(format)) {
         const part = formattedParts.find((part) => part.type === key);
         if (part) {
-            formattedDateParts.push(part.value, delimiter[key]);
+            const value = lang === 'de' && key === 'month' && format[key] === 'short' ? part.value.replace('.', '') : part.value;
+            formattedDateParts.push(value, delimiter[key]);
         }
     }
 

@@ -163,7 +163,7 @@ export const getNewsFormattedDate = (
         },
         de: {
             day: '2-digit.', // "numeric", "2-digit"
-            month: '2-digit.', // "numeric", "2-digit", "narrow", "short", and "long"
+            month: 'short ', // "numeric", "2-digit", "narrow", "short", and "long"
             year: 'numeric ', //"numeric", "2-digit"
             hour: '2-digit:', // "numeric", "2-digit"
             minute: '2-digit ' // "numeric", "2-digit"
