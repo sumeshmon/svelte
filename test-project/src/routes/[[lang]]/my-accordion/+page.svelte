@@ -2,32 +2,34 @@
     import { onMount, onDestroy } from 'svelte';
    
     onMount(() => {
-        const accordionItems = document.querySelectorAll('.accordion > .accordion-item');
+       const accordionItem = document.querySelectorAll('.accordion > .accordion-item')
 
-        accordionItems.forEach((item) => {
-            const accordionHeader = item.querySelector('.accordion-header');
-            const accordionContent = item.querySelector('.accordion-content') ;
+       accordionItem.forEach( (accordionTitle) => {
+        const accordionContent = accordionTitle.querySelector('.accordion-content')
+        
+        accordionTitle.addEventListener('click', (e)=>{
+            e.preventDefault();                       
+            
+            const isTitleActive = accordionTitle.classList.toggle('active')
 
-            accordionHeader?.addEventListener('click', (e) => {
-                e.preventDefault();
+            if (accordionContent instanceof HTMLElement){
+                accordionContent.style.display = isTitleActive ? 'block' : 'none'
+            }
 
-                // Toggle the current item's active class and content display
-                const isActive = item.classList.toggle('active');
-                if (accordionContent) {
-                    accordionContent.style.display = isActive ? 'block' : 'none';
-                }
-
-                accordionItems.forEach((otherItem) => {
-                    if (item !== otherItem) {
-                        otherItem.classList.remove('active');
-                        const otherContent = otherItem.querySelector('.accordion-content');
-                        if (otherContent) {
-                            otherContent.style.display = 'none';
-                        }
+            accordionItem.forEach( (otheraccordionTitle)=>{
+                if (accordionTitle != otheraccordionTitle){
+                    otheraccordionTitle.classList.remove('active')
+                    const otherAccordionContent = otheraccordionTitle.querySelector('.accordion-content')
+                    if( otherAccordionContent instanceof HTMLElement){
+                        otherAccordionContent.style.display = 'none'
                     }
-                });
-        });
-});
+                }
+            })
+
+        })
+        
+       })
+       
 
     })
 </script> 
