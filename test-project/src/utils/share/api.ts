@@ -98,5 +98,8 @@ export const fetchCompanyProfile = async (): Promise<HydraCollectionResponse<Com
     const response = await sendGet(endpoint, {
         headers: { 'Content-Type': 'application/json' }
     });
-    return (await response.json()) as Promise<HydraCollectionResponse<CompanyProfile>>;
+    // return (await response.json()) as Promise<HydraCollectionResponse<CompanyProfile>>;
+    const data = await response.json();
+    // console.log('API Response Data:', data);
+    return data as HydraCollectionResponse<CompanyProfile>
 };

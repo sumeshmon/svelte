@@ -8,7 +8,7 @@
 <GoogleAnalytics />
 <ETrackerAnalytics />
 
-<!-- <Header /> -->
+<Header /> 
 
 <main>
     <slot />

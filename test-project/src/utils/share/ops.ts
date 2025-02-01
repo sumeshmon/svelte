@@ -169,13 +169,17 @@ export const getIpoData = async (): Promise<TableData> => {
 export const getCompanyProfile = async (): Promise<string> => {
     let companyProfile: string = '';
     const lang = locale.get();
-    const companyData: CompanyProfile = (await fetchCompanyProfile())['hydra:member'][0];
+
+    const testCompanyData: CompanyProfile = (await fetchCompanyProfile())['hydra:member'][0];  
+    const companyData: CompanyProfile = (await fetchCompanyProfile())['hydra:member'][0];   
     companyData.localeId.forEach((loc: CompanyProfileLocale) => {
+        
         if (lang !== loc.languageCode) {
             return;
         }
         companyProfile = loc.profileContent;
     });
+    
     return companyProfile as string;
 };
 

@@ -50,6 +50,7 @@ const loaders = supportedLocales.flatMap((locale) => [
     { locale, key: 'forms', loader: () => importTranslation(locale, 'forms') },
     { locale, key: 'breadcrumb', loader: () => importTranslation(locale, 'breadcrumb') },
     { locale, key: 'flipbook', loader: () => importTranslation(locale, 'flipbook') },
+    { locale, key: 'custom-menu', loader: () => importTranslation(locale, 'custom-menu') },
     { locale, key: ROUTES_TRANSLATION_KEY, loader: () => importTranslation(locale, 'routes') },
     {
         locale,

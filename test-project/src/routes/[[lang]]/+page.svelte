@@ -2,6 +2,7 @@
     import { t } from '$lib/translations';
     import WebsiteContent from '$components/WebsiteContent.svelte';
     import Banner from '$components/Header/Banner.svelte';
+    import Header from './Header.svelte';
 </script>
 
 <svelte:head>

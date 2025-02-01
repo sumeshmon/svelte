@@ -54,6 +54,8 @@ const config = {
                     `/${locale}/events/filter`,
                     `/${locale}/facts-and-figures`,
                     `/${locale}/people-profile`,
+                    `/${locale}/custom-company-data`,
+                    `/${locale}/custom-company-contact`,
                     `/${locale}/shareholder`
                 ],
                 ['*']

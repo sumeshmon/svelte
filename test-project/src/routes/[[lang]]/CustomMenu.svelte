@@ -9,7 +9,7 @@
     let menuItems: MenuItem[] = [];
 
     $: menuItems = customMenu($locale);
-
+  
 </script>
 
 <ul class="custom-menu">
@@ -22,7 +22,7 @@
                             (sub) =>
                                 $page.url.pathname.includes(getLocalizedPathname(sub.link, $locale))
                         )
-                            ? 'menu__item--parent-active'
+                            ? ''
                             : ''}"
                     >
                         <a
@@ -43,10 +43,10 @@
                         <MenuLevel1 submenu={item.submenu} />
                     </li>
                 {:else}
-                    <li class="">
+                    <li>
                         <a
-                            class=""
                             href={getLocalizedPathname(item.link, $locale)}
+                            data-sveltekit-reload
                             class:selected={$page.url.pathname.startsWith(
                                 getLocalizedPathname(item.link, $locale)
                             ) ||

@@ -25,6 +25,6 @@
     </div>
 
     <Navbar>
-        <CustomMenu/>
+        <CustomMenu/> 
     </Navbar>
 </header>

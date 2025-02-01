@@ -12,7 +12,7 @@
 </script>
 
 <ul class="menu">
-    {#each menuItems as item}
+    {#each menuItems as item} 
         {#if !item?.hideOnLang?.includes($locale)}
             {#if phases[item.phase] <= phases[PUBLIC_CURRENT_PHASE]}
                 {#if item.submenu?.length}
