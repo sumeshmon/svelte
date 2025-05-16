@@ -2,7 +2,7 @@ import { getLangSlug, prependBasePath } from '$utils/ops';
 export interface MenuItem {
     title: string;
     link: string;
-    isCorporate?: string;
+    isCorporate?: boolean;
     phase: string;
     submenu?: MenuItem[];
     hideOnLang?: string[];
@@ -385,12 +385,13 @@ export const customMenu = (locale: string): MenuItem[] => {
             title: `custom-menu.company_data`,
             link: `${basePath}/custom-company-data`,
             phase: `website`,
-            isCorporate : `true`
+            isCorporate : false
         },
         { 
             title: `custom-menu.company-profile`,
             link: `${basePath}/custom-company-contact`,
-            phase: `website`
+            phase: `website`,
+            isCorporate : true
         },
     ];
 };

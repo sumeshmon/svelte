@@ -1,5 +1,12 @@
 ## start a project
-degit repoName/ template projectName
+npx sv create project name
+
+
+
+
+
+
+
 ## event
 https://dev.to/tanhauhau/7-event-modifiers-in-svelte-you-must-know-27oc
 
