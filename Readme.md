@@ -1,11 +1,12 @@
 ## start a project
-npx sv create project name
+npx sv create project name <br><br>
+
+## tips
+{#each [15,25,33] as value,index } - default order will be value and index <br>
 
 
 
-
-
-
+<br><br>
 
 ## event
 https://dev.to/tanhauhau/7-event-modifiers-in-svelte-you-must-know-27oc
