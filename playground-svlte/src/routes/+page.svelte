@@ -1,6 +1,7 @@
 <script>
   import Container from "./components/Container.svelte";
   import FaceComponent from "./components/FaceComponent.svelte";
+  import Header from "./components/Header.svelte";
   let say = "hi";
   setTimeout(() => {
     say = "hello";
@@ -16,12 +17,19 @@
     console.log(`value is ${value} and the position of the array is ${index}`);
     return null;
   }
-</script>
- 
-<Container> 
-  <div>Say: {say}</div>
 
-  <FaceComponent index={2} />
+  let showHeader = false;
+  setTimeout(() => {
+    showHeader = true;
+  }, 1000);
+</script>
+
+{#if showHeader}
+  <Header />
+{/if}
+
+<Container>
+  <div>Say: {say}</div>
 
   {#if isLogged}
     <h2>Welcome dude!</h2>
@@ -33,7 +41,7 @@
     <p>Value is {value} and the index is {index}</p>
   {/each}
 
-  {#each [15,25,33] as value,index }
-    <p>{value}  <span> - </span>   {index}</p>
+  {#each [15, 25, 33] as value, index}
+    <p>{value} <span> - </span> {index}</p>
   {/each}
 </Container>

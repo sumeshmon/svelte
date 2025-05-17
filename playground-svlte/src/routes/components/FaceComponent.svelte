@@ -1,6 +1,11 @@
 <script>
-    export let index = 2;
+    export let position = 2;
     let faceList = [':-)', ':-|', ':-(']
 </script>
 
-<div>{faceList[index]}</div>
+<div class="face">{faceList[position]}</div>
+<style>
+    .face{
+        color: brown;
+    }
+</style>

@@ -4,8 +4,8 @@
 <style>
     .container{
         width: 800px;
-        margin: 0 auto;
+        margin: 300px auto 0;
         background-color: aliceblue;
         padding: 15px; 
     }
-</style>
+</style>   
