@@ -1,5 +1,5 @@
 <header>
-  {#each [0,1,2,0] as d}
+  {#each [0,1,2] as anything}
     <img
       alt="svelte logo"
       src="https://thepracticaldev.s3.amazonaws.com/i/ji7zisis4c0f4ce2cer1.png"

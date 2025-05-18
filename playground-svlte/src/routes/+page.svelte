@@ -1,4 +1,5 @@
 <script>
+  import Button from "./components/Button.svelte";
   import Container from "./components/Container.svelte";
   import FaceComponent from "./components/FaceComponent.svelte";
   import Header from "./components/Header.svelte";
@@ -19,17 +20,24 @@
   }
 
   let showHeader = false;
-  setTimeout(() => {
-    showHeader = true;
-  }, 1000);
+  // setTimeout(() => {
+  //   showHeader = true;
+  // }, 1000);
 </script>
 
 {#if showHeader}
   <Header />
-{/if}
+{/if} <br><br><br><br><br><br><br>
+<!-- just passing the click event with slot -->
+<!-- <button on:click={ () =>{showHeader=true} }>Show header</button>
+<button on:click={ () =>{showHeader=false} }>Hide header</button> -->
 
+<!-- passing the event -->
+ <Button on:showBabu = { ()=>{showHeader=true} } on:hideBabu = { ()=>{showHeader=false} }/>
+
+ <!-- <Button on:clickSasi = { (e)=>{showHeader=e.detail} } /> -->
 <Container>
-  <div>Say: {say}</div>
+  <div>Say: {say}</div> 
 
   {#if isLogged}
     <h2>Welcome dude!</h2>
@@ -44,4 +52,5 @@
   {#each [15, 25, 33] as value, index}
     <p>{value} <span> - </span> {index}</p>
   {/each}
+
 </Container>
