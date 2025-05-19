@@ -23,6 +23,14 @@
   // setTimeout(() => {
   //   showHeader = true;
   // }, 1000);
+
+// challenge
+  const buttons = [
+        {value: 0,  text: 'ummmmmm......'},
+        {value: 1,  text: 'I sure do!'},
+        {value: -2, text: 'gross!'}
+    ]
+    let score = 0;
 </script>
 
 {#if showHeader}
@@ -33,9 +41,13 @@
 <button on:click={ () =>{showHeader=false} }>Hide header</button> -->
 
 <!-- passing the event -->
- <Button on:showBabu = { ()=>{showHeader=true} } on:hideBabu = { ()=>{showHeader=false} }/>
+ <!-- <Button on:showBabu = { ()=>{showHeader=true} } on:hideBabu = { ()=>{showHeader=false} }/> -->
 
  <!-- <Button on:clickSasi = { (e)=>{showHeader=e.detail} } /> -->
+
+ <!-- challenge -->
+  {score}
+  <Button {buttons} on:click={ (e)=> {score += e.detail.value}}/>
 <Container>
   <div>Say: {say}</div> 
 
