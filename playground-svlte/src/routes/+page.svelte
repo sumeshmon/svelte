@@ -3,6 +3,7 @@
   import Container from "./components/Container.svelte";
   import FaceComponent from "./components/FaceComponent.svelte";
   import Header from "./components/Header.svelte";
+  import Play from "./components/Play.svelte";
   let say = "hi";
   setTimeout(() => {
     say = "hello";
@@ -32,6 +33,8 @@
     ]
     let score = 0;
 </script>
+<Play/>
+
 
 {#if showHeader}
   <Header />
@@ -66,3 +69,6 @@
   {/each}
 
 </Container>
+
+
+
