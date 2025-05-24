@@ -3,7 +3,7 @@
   import Container from "./components/Container.svelte";
   import FaceComponent from "./components/FaceComponent.svelte";
   import Header from "./components/Header.svelte";
-  import Play from "./components/Play.svelte";
+  import Play from "./components/PlayButtonDispatcher.svelte";
   let say = "hi";
   setTimeout(() => {
     say = "hello";
@@ -28,8 +28,8 @@
 // challenge
   const buttons = [
         {value: 0,  text: 'ummmmmm......'},
-        {value: 1,  text: 'I sure do!'},
-        {value: -2, text: 'gross!'}
+        {value: 1,  text: 'Increase'},
+        {value: -2, text: 'Decrease'}
     ]
     let score = 0;
 </script>
@@ -48,7 +48,7 @@
 
  <!-- <Button on:clickSasi = { (e)=>{showHeader=e.detail} } /> -->
 
- <!-- challenge -->
+ <!-- challenge --> 
   {score}
   <Button {buttons} on:click={ (e)=> {score += e.detail.value}}/>
 <Container>

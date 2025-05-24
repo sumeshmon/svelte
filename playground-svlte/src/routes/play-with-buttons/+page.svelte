@@ -6,8 +6,13 @@
     showContent = true;
   }
   const names = ["Mohan Lal", "Mammooty", "Suresh Gopi"];
+  const stringify = JSON.stringify(names)
+  const json = JSON.parse(stringify)
+  console.log(json)
 </script>
-
+<!-- json parser test -->
+ 
+<h5>{json}</h5>
 {#if showContent}
   Hellow
 {/if} 
