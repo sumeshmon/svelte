@@ -3,22 +3,10 @@
   import { createEventDispatcher } from 'svelte';
   const dispatch = createEventDispatcher()
 </script>
-<!-- using js function -->
-<!-- <button on:click={() => dispatch('clickSasi', false)}>
-  <slot></slot>
-</button> -->
+<!-- <button on:click><slot></slot></button> -->
 
+<!-- <button on:click = { ()=> dispatch('show')}>Show content</button>
+<button on:click = { () => dispatch('hide') }>Hide Contnet</button> -->
 
-<!-- method 1 --> 
-<!-- <button on:click ><slot></slot></button> -->
-
-
-<!-- method 2 -->
-<!-- <button on:click={ ()=> dispatch('clickSumesh') }>Show header</button>
-
-<button on:click  = { () => dispatch('clickBabu')}>Hide Header</button> -->
-
-<!-- method 3 -->
-
-<button on:click = { () => dispatch('clickSasi',true)}>Show Header</button>
-<button on:click = { () => dispatch('clickSasi',false)}>Hide Header</button>
+<button on:click = { () => dispatch('customClick', true)}>Show contnet</button>
+<button on:click = { () => dispatch('customClick', false)}>Hide contnet</button>

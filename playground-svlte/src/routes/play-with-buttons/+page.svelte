@@ -8,7 +8,6 @@
   const names = ["Mohan Lal", "Mammooty", "Suresh Gopi"];
   const stringify = JSON.stringify(names)
   const json = JSON.parse(stringify)
-  console.log(json)
 </script>
 <!-- json parser test -->
  
@@ -16,20 +15,17 @@
 {#if showContent}
   Hellow
 {/if} 
-<!-- <button on:click={ () => {showContent=true}}> Show header</button>
-<button on:click={ () => {showContent=false}}> Hide Header</button> -->
 
-<!-- <Play on:clickSumesh = { () => {showContent = true} } on:clickBabu = { () => {showContent = false} }/> -->
-
-<!-- using js function -->
-<!-- <Play on:clickSasi={handleClickSasi}>Show events</Play> -->
+<!-- <PlayButtonDispatcher 
+  on:show = { () => showContent = true } 
+  on:hide = { () => showContent = false }
+/> -->
 
 <PlayButtonDispatcher
-  on:clickSasi={(e) => {
-    showContent = e.detail;
+  on:customClick = {(e) => {
+    showContent = e.detail
   }}
 />
-
 <hr />
 <!-- loop -->
 {#each ["Mohan Lal", "Mammooty", "Suresh Gopi"] as value, position}
