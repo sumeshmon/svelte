@@ -26,6 +26,7 @@
     showContent = e.detail
   }}
 />
+
 <hr />
 <!-- loop -->
 {#each ["Mohan Lal", "Mammooty", "Suresh Gopi"] as value, position}
